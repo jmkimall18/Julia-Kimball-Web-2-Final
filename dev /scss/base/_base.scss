@@ -1,0 +1,80 @@
+/* =============
+    Base
+============= */
+ figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+.content {
+   background-color: $white;
+
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+        "header"
+        "heading-1"
+        "heading-2"
+        "hero-2"
+        "hero"
+        "section-1"
+        "section-2";
+
+     .header {
+        grid-area: header;
+     }
+
+     #heading-1 {
+        grid-area: heading-1;
+     }
+
+     #heading-2 {
+        grid-area: heading-2;
+     }
+
+     #hero-2 {
+        grid-area: hero-2;
+     }
+
+
+     #hero {
+        grid-area: hero;
+     }
+
+     #section-1 {
+        grid-area: section-1;
+     }
+
+     #section-2 {
+        grid-area: section-2;
+     }
+
+     
+     .footer {
+        grid-area: footer;
+     }
+
+    margin-bottom: 24px;
+
+    @include md {
+        margin-bottom: 32px;
+    }
+
+    @include lg {
+        margin-bottom: 32px;
+    }
+
+
+    @include xl {
+        margin-bottom: 64px;
+    }
+}
