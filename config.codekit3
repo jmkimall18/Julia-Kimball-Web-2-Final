@@ -394,7 +394,7 @@
   "projectAttributes" : {
     "creationDate" : 642571219.45073998,
     "displayValue" : "Julia-Kimball-Web-2-Final",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-slime",
     "iconImageWasSetByUser" : 0
   },
