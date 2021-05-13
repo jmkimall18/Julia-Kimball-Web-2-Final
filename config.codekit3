@@ -9,18 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy \/css\/styles.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/css\/styles-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/deploy \/img\/blueberries\/Berriesall.jpg" : {
       "ft" : 16384,
       "iS" : 1800685,
@@ -271,6 +259,18 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy \/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dev \/content\/heading-1.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -378,8 +378,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dev \/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/deploy \/styles.css",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
