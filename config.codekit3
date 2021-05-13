@@ -9,12 +9,22 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy \/img\/blueberries\/Berriesall.jpg" : {
+    "\/deploy \/img\/cake\/cake2.gif" : {
+      "ft" : 4194304,
+      "iS" : 164326,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/cake\/cake2.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/deploy \/img\/chairs\/table-setting.jpg" : {
       "ft" : 16384,
-      "iS" : 1800685,
+      "iS" : 286165,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/blueberries\/Berriesall.jpg",
+      "oAP" : "\/deploy \/img\/chairs\/table-setting.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -22,15 +32,28 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/field2\/farmfield.jpg" : {
+    "\/deploy \/img\/couple\/bride.jpg" : {
       "ft" : 16384,
-      "iS" : 3519943,
+      "iS" : 133511,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/field2\/farmfield.jpg",
+      "oAP" : "\/deploy \/img\/couple\/bride.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Folk2.png\/Folk.png" : {
+      "ft" : 32768,
+      "iS" : 1184,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/Folk2.png\/Folk.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -113,12 +136,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/Hayrides\/hay.jpg" : {
+    "\/deploy \/img\/group\/bridesmaids.jpg" : {
       "ft" : 16384,
-      "iS" : 3279147,
+      "iS" : 347468,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/Hayrides\/hay.jpg",
+      "oAP" : "\/deploy \/img\/group\/bridesmaids.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -126,22 +149,38 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/header\/logoFrame2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy \/img\/header\/logoFrame2.svg",
+    "\/deploy \/img\/HB\/HarpersBazaar.png" : {
+      "ft" : 32768,
+      "iS" : 134095,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/HB\/HarpersBazaar.png",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
-    "\/deploy \/img\/hero\/hero3.jpg" : {
+    "\/deploy \/img\/header\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 11622,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/header\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/hero\/destination.jpg" : {
       "ft" : 16384,
-      "iS" : 2766074,
+      "iS" : 181241,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/hero\/hero3.jpg",
+      "oAP" : "\/deploy \/img\/hero\/destination.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -149,12 +188,38 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/Interal-store\/inside.jpeg" : {
+    "\/deploy \/img\/map\/map-pin.png" : {
+      "ft" : 32768,
+      "iS" : 1486,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/map\/map-pin.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Moon\/moon2.png" : {
+      "ft" : 32768,
+      "iS" : 8213,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/Moon\/moon2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Products\/flower.jpg" : {
       "ft" : 16384,
-      "iS" : 3385649,
+      "iS" : 425156,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/Interal-store\/inside.jpg",
+      "oAP" : "\/deploy \/img\/Products\/flower.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -162,80 +227,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/kids-dad\/kids.jpg" : {
+    "\/deploy \/img\/tablee\/table.jpg" : {
       "ft" : 16384,
-      "iS" : 2852846,
+      "iS" : 354161,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/kids-dad\/kids.jpg",
+      "oAP" : "\/deploy \/img\/tablee\/table.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy \/img\/people-food\/farmstand.jpg" : {
-      "ft" : 16384,
-      "iS" : 2384627,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/img\/people-food\/farmstand.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy \/img\/strawberries\/straws.jpg" : {
-      "ft" : 16384,
-      "iS" : 4249000,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/img\/strawberries\/straws.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy \/img\/veggies\/veggiess2.jpg" : {
-      "ft" : 16384,
-      "iS" : 13457,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/img\/veggies\/veggiess2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy \/img\/wholesale\/Berries.jpg" : {
-      "ft" : 16384,
-      "iS" : 13148,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/img\/wholesale\/Berries.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy \/img\/woman\/women.jpg" : {
-      "ft" : 16384,
-      "iS" : 2191233,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/img\/woman\/women.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -271,28 +271,20 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/dev \/content\/Features.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/Features.html",
+      "oF" : 0
+    },
     "\/dev \/content\/heading-1.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/content\/heading-1.html",
-      "oF" : 0
-    },
-    "\/dev \/content\/heading-2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev \/content\/heading-2.html",
-      "oF" : 0
-    },
-    "\/dev \/content\/hero-2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev \/content\/hero-2.html",
       "oF" : 0
     },
     "\/dev \/content\/hero.kit" : {
@@ -303,20 +295,28 @@
       "oAP" : "\/dev \/content\/hero.html",
       "oF" : 0
     },
-    "\/dev \/content\/section-1.kit" : {
+    "\/dev \/content\/new.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev \/content\/section-1.html",
+      "oAP" : "\/dev \/content\/new.html",
       "oF" : 0
     },
-    "\/dev \/content\/section-2.kit" : {
+    "\/dev \/content\/services.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev \/content\/section-2.html",
+      "oAP" : "\/dev \/content\/services.html",
+      "oF" : 0
+    },
+    "\/dev \/content\/Wedding.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/Wedding.html",
       "oF" : 0
     },
     "\/dev \/global\/footer.kit" : {
@@ -341,7 +341,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/global\/header.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev \/global\/scripts.kit" : {
       "cB" : 0,
@@ -356,8 +356,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev \/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy \/index.html",
+      "oF" : 2
     },
     "\/dev \/js\/scripts.js" : {
       "bF" : 0,
