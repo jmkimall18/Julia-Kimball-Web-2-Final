@@ -9,14 +9,43 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy \/img\/cake\/cake2.gif" : {
-      "ft" : 4194304,
-      "iS" : 164326,
+    "\/deploy \/img\/alter\/alterr.jpg" : {
+      "ft" : 16384,
+      "iS" : 438359,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/cake\/cake2.gif",
+      "oAP" : "\/deploy \/img\/alter\/alterr.jpg",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/bridal\/friends.jpg" : {
+      "ft" : 16384,
+      "iS" : 378559,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/bridal\/friends.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/cake\/Background.jpg" : {
+      "ft" : 16384,
+      "iS" : 427662,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/cake\/Background.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy \/img\/chairs\/table-setting.jpg" : {
@@ -25,6 +54,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy \/img\/chairs\/table-setting.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/clutch\/bag.jpg" : {
+      "ft" : 16384,
+      "iS" : 444310,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/clutch\/bag.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -41,6 +83,84 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple2\/girls.jpg" : {
+      "ft" : 16384,
+      "iS" : 242618,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple2\/girls.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple3\/car.jpg" : {
+      "ft" : 16384,
+      "iS" : 31998,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple3\/car.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple4\/blue.jpg" : {
+      "ft" : 16384,
+      "iS" : 190541,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple4\/blue.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple5\/happy.jpg" : {
+      "ft" : 16384,
+      "iS" : 453805,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple5\/happy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple6\/pretty.jpg" : {
+      "ft" : 16384,
+      "iS" : 557582,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple6\/pretty.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/cut\/the-cut.png" : {
+      "ft" : 32768,
+      "iS" : 4045,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/cut\/the-cut.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -149,6 +269,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/hands\/rings.jpg" : {
+      "ft" : 16384,
+      "iS" : 280633,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/hands\/rings.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy \/img\/HB\/HarpersBazaar.png" : {
       "ft" : 32768,
       "iS" : 134095,
@@ -162,11 +295,34 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/header\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 11622,
+    "\/deploy \/img\/header\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy \/img\/header\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy \/img\/hero\/destination.jpg" : {
+      "ft" : 16384,
+      "iS" : 181241,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/header\/logo.png",
+      "oAP" : "\/deploy \/img\/hero\/destination.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Instyle\/in-style.png" : {
+      "ft" : 32768,
+      "iS" : 18246,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/Instyle\/in-style.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -175,12 +331,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/hero\/destination.jpg" : {
+    "\/deploy \/img\/knot\/kkot.png" : {
+      "ft" : 32768,
+      "iS" : 43779,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/knot\/kkot.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Leppo\/wo.jpg" : {
       "ft" : 16384,
-      "iS" : 181241,
+      "iS" : 229915,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/hero\/destination.jpg",
+      "oAP" : "\/deploy \/img\/Leppo\/wo.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -227,6 +396,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/shoes\/shoess.jpg" : {
+      "ft" : 16384,
+      "iS" : 460459,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/shoes\/shoess.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/silver\/bracelete.jpg" : {
+      "ft" : 16384,
+      "iS" : 312909,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/silver\/bracelete.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy \/img\/tablee\/table.jpg" : {
       "ft" : 16384,
       "iS" : 354161,
@@ -236,6 +431,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/ww\/wire.jpg" : {
+      "ft" : 16384,
+      "iS" : 34899,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/ww\/wire.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -303,12 +511,36 @@
       "oAP" : "\/dev \/content\/new.html",
       "oF" : 0
     },
+    "\/dev \/content\/Products.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/Products.html",
+      "oF" : 0
+    },
     "\/dev \/content\/services.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/content\/services.html",
+      "oF" : 0
+    },
+    "\/dev \/content\/Vendors.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/Vendors.html",
+      "oF" : 0
+    },
+    "\/dev \/content\/Wedding-gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/Wedding-gallery.html",
       "oF" : 0
     },
     "\/dev \/content\/Wedding.kit" : {
