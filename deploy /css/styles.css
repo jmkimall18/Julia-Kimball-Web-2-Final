@@ -516,10 +516,9 @@ Features {
 /* =============
    new
 ============= */
-new {
+News > ul {
   display: grid;
 }
-
 /* =============
    Products
 ============= */
