@@ -2,21 +2,34 @@
    Heading-1
 ============= */
 
-#heading-1{
-    display: grid;
 
+#heading-1 {
+	display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". search .";
-        background-color: $greyLight;
-    
+		grid-template-areas: ". heading-1 .";
+        background-color: $white;
+
+
         @include xl{
+
             grid-template-columns: auto 1000px auto;
         }
-    
+
         >div{
-            // border: 5px solid red;
-            grid-area: search;
-    
-            
-    }
-}
+            grid-area: heading-1;
+
+
+            input{
+
+
+            }
+
+
+
+            button{
+
+                background-color: $vanilla;
+
+            }
+        }
+	}

@@ -2,61 +2,58 @@
     Footer
 ============= */
 footer {
-    color: $white;
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+  
 
     @include xl{
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: auto 1200px auto; 
     }
 
-    >div {
-        grid-area: footer;
-        // border: 1px solid red;
-        @include md{
-            display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "locations sing-up"
-            "locations follow";
-        }
-
-        @include xl{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            "locations sing-up follow";
-        }
-
-        section{
-            // border: 1px solid thistle;
-
-            ul{
-                li{
-                    i{
-                        color: $yellow;
-                    }
-                }
+  >div{
+    grid-area: footer;
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto; 
+        grid-template-areas: 
+        "footera f1"
+        "footera f2";
             }
+
+            @include xl{
+
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: 
+        "footera f1 f2";
+            }
+
+        li{
+
         }
 
-        #locations{
+        #footera{
+
             @include md{
-                grid-area: locations;
+                grid-area: footera;
             }
         }
 
-        #sign-up{
+        #f1{
+
             @include md{
-                grid-area: sing-up;
+                grid-area: f1;
             }
         }
 
-        #follow{
+        #f2{
+
             @include md{
-                grid-area: follow;
+                grid-area: f2;
             }
         }
 
-    }
+        }
+
 }
