@@ -9,6 +9,18 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/deploy \/css\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/css\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/deploy \/img\/alter\/alterr.jpg" : {
       "ft" : 16384,
       "iS" : 438359,
@@ -467,18 +479,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/deploy \/styles.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy \/styles-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/dev \/content\/Features.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -653,7 +653,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/scss\/components\/_buttons.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -681,7 +681,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/scss\/components\/_navigation.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -876,7 +876,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/styles.css",
+      "oAP" : "\/deploy \/css\/styles.css",
       "oF" : 2,
       "oS" : 0,
       "pg" : 0,

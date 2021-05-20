@@ -407,74 +407,7 @@ textarea {
     Header
 ============= */
 header {
-  position: fixed;
-  left: 0;
-  background-color: #4E7851;
-  top: 0;
-  width: 100%;
-  height: 100px;
-}
-header > div {
   display: grid;
-  grid-template-areas: "burger-icon online" "nav nav";
-  grid-template-columns: 20% auto;
-}
-@media (min-width: 1024px) {
-  header > div {
-    grid-template-areas: "nav online";
-    grid-template-columns: 20% auto;
-  }
-}
-header > div #button-container {
-  grid-area: online;
-  display: flex-end;
-  text-align: right;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-}
-header > div #button-container button {
-  padding-bottom: 16px;
-  font-size: 14px;
-  font-family: "Work Sans";
-  font-weight: 400;
-  border-radius: 5px;
-  padding: 3px 6px;
-  background-color: #89514E;
-  border: none;
-  color: #F7E8DC;
-}
-header > div #button-container button:hover, header > div #button-container button:active {
-  color: #C38583;
-}
-header > div #burger-container {
-  grid-area: burger-icon;
-  padding: 16px 0 0 16px;
-}
-header > div #burger-container #burger-icon {
-  color: #F7E8DC;
-  cursor: pointer;
-  font-size: 1.875rem;
-}
-header > div #burger-container #burger-icon:hover, header > div #burger-container #burger-icon:active {
-  color: #C38583;
-}
-@media (min-width: 1024px) {
-  header > div #burger-container {
-    display: none;
-  }
-}
-header > div #nav-container {
-  display: none;
-  background-color: #4E7851;
-  grid-area: nav;
-  padding: 20px 10px 10px;
-}
-@media (min-width: 1024px) {
-  header > div #nav-container {
-    background-color: #4E7851;
-    display: block !important;
-  }
 }
 
 /* =============
@@ -629,31 +562,62 @@ footer button:hover, footer button:active {
 /* =============
    Features
 ============= */
-section {
-  position: fixed;
+Features {
+  display: grid;
 }
 
 /* =============
-    heading-1
+   Heading-1
 ============= */
+heading-1 {
+  display: grid;
+}
+
 /* =============
-    new
+   hero
 ============= */
+hero {
+  display: grid;
+}
+
 /* =============
-    hero
+   new
 ============= */
+new {
+  display: grid;
+}
+
 /* =============
- Products
+   Products
 ============= */
+products {
+  display: grid;
+}
+
 /* =============
-    services
+   services
 ============= */
+products {
+  display: grid;
+}
+
 /* =============
-    Vendors
+   Vendors
 ============= */
+Vendors {
+  display: grid;
+}
+
 /* =============
    Wedding-gallery
 ============= */
+Wedding-gallery {
+  display: grid;
+}
+
 /* =============
    Wedding
 ============= */
+Wedding {
+  display: grid;
+}

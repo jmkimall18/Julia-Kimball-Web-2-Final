@@ -2,186 +2,61 @@
     Footer
 ============= */
 footer {
-
+    color: $white;
     display: grid;
-    padding-top: 44px;
-    padding-bottom: 44px;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    background-color: $forest;
 
     @include xl{
-        grid-template-columns: auto 1200px auto; 
+        grid-template-columns: auto 1200px auto;
     }
 
-  >div{
-    
-    grid-area: footer;
-    @include md{
-        display: grid;
-        grid-template-columns: 50% auto; 
-        grid-template-areas: 
-        "footera f1"
-        "footera f2";
-            }
-
-            @include xl{
-
-                grid-template-columns: repeat(3,1fr);
-                grid-template-areas: 
-        "footera f1 f2";
-            }
-
-        li{
-            display: flex;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            
-        }
-        div{
-            display: flex;
-            
+    >div {
+        grid-area: footer;
+        // border: 1px solid red;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "locations sing-up"
+            "locations follow";
         }
 
-        #footera{
-
-            a{
-                font-weight: 400;
-                font-size: 12px;
-                font-family: 'Karla';
-                color: $vanilla;
-                padding-left: 6px;
-                color: $vanilla;
-        }
-            h1 {
-
-                font-weight: 400;
-                font-size: 20px;
-                font-family: 'Work Sans';
-            }
-
-            h2 {
-
-                font-weight: 300;
-                font-size: 18px;
-                font-family: 'Work Sans';
-            }
-
-            @include md{
-                grid-area: footera;
-            }
+        @include xl{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "locations sing-up follow";
         }
 
-        #f1{
-            h1 {
+        section{
+            // border: 1px solid thistle;
 
-                font-weight: 400;
-                font-size: 20px;
-                font-family: 'Work Sans';
-            }
-            
-
-            padding-top: 16px;
-            padding-bottom: 4px;
-            @include md{
-                grid-area: f1;
-            }
-
-            input{ 
-                width: 70%;
-                background-color: $vanilla;
-                border: none;
-                color: #1D322B;
-                padding: 16px;
-                
-
-
-            }
-        }
-
-        #f2{
-
-            h1 {
-
-                font-weight: 400;
-                font-size: 20px;
-                font-family: 'Work Sans';
-               
-            }
-
-            padding-top: 6px;
-            padding-bottom: 16px;
-            width: 95%;
-            @include md{
-                grid-area: f2;
-            }
-
-            i{
-                
-               margin: 10px;
-                color: $vanilla;
-                &:hover, &:active{
-                    color: #C38583;
+            ul{
+                li{
+                    i{
+                        color: $yellow;
+                    }
                 }
-                
             }
         }
 
+        #locations{
+            @include md{
+                grid-area: locations;
+            }
         }
 
-        h1{
-            color: #C38583;
-            font-weight: 400;
-            font-size: 30px;
-            padding-bottom: 6px;
-        }
-        h2{
-            color: #C1E4BB;
-            font-weight: 400;
-            font-size: 20px;
-            
+        #sign-up{
+            @include md{
+                grid-area: sing-up;
+            }
         }
 
-        address{
-            font-weight: 300;
-            font-size: 12px;
-            font-family: 'Karla';
-            color: $vanilla;
-            padding-left: 6px;
-           
-
+        #follow{
+            @include md{
+                grid-area: follow;
+            }
         }
-
-        a{ width: 90%;
-            
-    }
- 
-
-    i{
-        color: #C38583;
 
     }
-    button{
-        display: flex;
-       
-            font-size: 14px;
-            font-family: 'Work Sans';
-            font-weight: 400;
-            transition: 0.25s;
-            margin-top: 16px;
-            margin-bottom: 32px;
-            margin-left: 63%;
-            border-radius: 5px;
-            padding: 3px 6px;
-            background-color: $christmas;
-            border: none;
-            color: $vanilla;
-            &:hover, &:active{
-                color: #C38583;
-            }
-
-            
-
-            }
 }
-
