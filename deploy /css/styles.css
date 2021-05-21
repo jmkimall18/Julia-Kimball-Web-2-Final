@@ -445,35 +445,96 @@ footer {
   }
 }
 footer > div {
+  padding-left: 10px;
+  border-left: 2px solid #000;
+  margin-bottom: 0px;
   grid-area: footer;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "footera f1" "footera f2";
+    grid-template-areas: "footera f2" "f2 f2";
   }
 }
 @media (min-width: 1200px) {
   footer > div {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "footera f1 f2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "footera f2" "f2 f2";
   }
 }
+footer > div li {
+  margin-bottom: 0px;
+  margin-top: 16px;
+  padding-left: 10px;
+}
+footer > div li #footera {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
 @media (min-width: 768px) {
-  footer > div #footera {
+  footer > div li {
     grid-area: footera;
   }
 }
-@media (min-width: 768px) {
-  footer > div #f1 {
-    grid-area: f1;
-  }
+footer > div > div {
+  display: flex-end;
+}
+footer > div #f2 {
+  text-align: right;
+}
+footer > div #f2 h4 {
+  padding-bottom: 10px;
+}
+footer > div #f2 h3 {
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   footer > div #f2 {
-    grid-area: f2;
+    grid-area: follow;
   }
+}
+@media (min-width: 1200px) {
+  footer > div #f2 {
+    text-align: right;
+  }
+}
+footer > div #f2 ul {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+footer > div #f2 ul li {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  footer > div #f2 ul li {
+    margin: 0 10px;
+  }
+}
+footer > div #f2 ul li a:link,
+footer > div #f2 ul li a:visited {
+  font-size: 1.875rem;
+}
+footer > div #f2 ul li a:link:hover, footer > div #f2 ul li a:link:active,
+footer > div #f2 ul li a:visited:hover,
+footer > div #f2 ul li a:visited:active {
+  color: #F7E8DC;
+}
+footer > div #f2 ul a {
+  width: 100%;
+}
+footer > div #f2 ul i {
+  color: #C38583;
+  display: flex-end;
+}
+footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
+  color: #F7E8DC;
 }
 
 /* =============
@@ -577,10 +638,6 @@ products {
 /* =============
    Vendors
 ============= */
-Vendors {
-  display: grid;
-}
-
 /* =============
    Wedding-gallery
 ============= */
