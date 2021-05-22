@@ -2,19 +2,100 @@
    new
 ============= */
 
-News{
-    >ul{
-
-        display: grid;
-        
-
-        >div{
-
-        
-      
-        }
-    }
-
+#News{
    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 
-}
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    grid-template-areas: ". News .";
+  
+
+    @include xl{
+        grid-template-columns: auto 1200px auto; 
+    }
+    ul{
+        grid-area: News;
+       
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-template-areas: 
+            "News1 News2";
+                }
+
+            @include lg{
+             display: grid;
+                    
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "News1 News2";
+                }
+
+    
+            @include xl{
+                    display: grid;
+            padding-right: 100px;
+            padding-left: 100px;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "News1 News2";
+                }
+
+            #News1{
+                padding-top: 30px;
+                padding-bottom: 50px;
+                display: grid;
+                text-align: justify;
+
+
+            }   
+            
+            #News2{
+                padding-top: 30px;
+                display: flex-end;
+                text-align: right;
+                margin-bottom: 30px;
+                input{ 
+                    width: 90%;
+                    margin-bottom: 30px;
+                    color: #1D322B;
+                    padding-bottom: 16px;
+                    
+                    
+    
+    
+                }
+
+            
+               
+            }
+            button {
+
+               
+               
+                background-color: $christmas;
+                border: none;
+                color: $vanilla;
+
+                &:hover,
+                &:active {
+                    color: #C38583;
+                }
+
+            }
+            }   
+
+
+
+
+            }
+
+
+
+    
+
+    

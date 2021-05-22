@@ -416,6 +416,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -435,8 +439,9 @@ header > div button {
     Footer
 ============= */
 footer {
+  padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 20px auto 20px;
   grid-template-areas: ". footer .";
 }
 @media (min-width: 1200px) {
@@ -445,42 +450,68 @@ footer {
   }
 }
 footer > div {
-  padding-left: 10px;
+  grid-area: footer;
+}
+footer > div h1 {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  footer > div h1 {
+    padding-bottom: 10px;
+  }
+}
+footer > div h3 {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+@media (min-width: 768px) {
+  footer > div h3 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+footer > div {
+  padding-left: 40px;
+  padding-top: 5px;
   border-left: 2px solid #000;
   margin-bottom: 0px;
   grid-area: footer;
-  margin-top: 20px;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "footera f2" "f2 f2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "footera f2";
   }
 }
 @media (min-width: 1200px) {
   footer > div {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "footera f2" "f2 f2";
+    grid-template-areas: "footera f2" "footera f2";
   }
 }
-footer > div li {
-  margin-bottom: 0px;
-  margin-top: 16px;
-  padding-left: 10px;
-}
-footer > div li #footera {
-  display: flex;
-  padding-top: 20px;
+footer > div ul {
   padding-bottom: 16px;
 }
-@media (min-width: 768px) {
-  footer > div li {
-    grid-area: footera;
-  }
+footer > div ul address {
+  margin-top: 10px;
 }
-footer > div > div {
+footer > div ul a {
+  color: black;
+  display: flex;
+  margin-top: 16px;
+}
+footer > div ul #footera i {
+  color: #C38583;
   display: flex-end;
+  text-align: left;
+}
+footer > div ul #footera i:hover, footer > div ul #footera i:active {
+  color: #F7E8DC;
+}
+footer > div ul #footera a {
+  color: black;
+  display: flex;
 }
 footer > div #f2 {
   text-align: right;
@@ -489,33 +520,18 @@ footer > div #f2 h4 {
   padding-bottom: 10px;
 }
 footer > div #f2 h3 {
-  padding-bottom: 10px;
-}
-@media (min-width: 768px) {
-  footer > div #f2 {
-    grid-area: follow;
-  }
-}
-@media (min-width: 1200px) {
-  footer > div #f2 {
-    text-align: right;
-  }
+  padding-bottom: 15px;
 }
 footer > div #f2 ul {
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
+  align-content: right;
   justify-content: flex-end;
 }
 footer > div #f2 ul li {
   display: flex;
-  align-content: center;
-  margin: 10px;
-}
-@media (min-width: 768px) {
-  footer > div #f2 ul li {
-    margin: 0 10px;
-  }
+  align-content: right;
 }
 footer > div #f2 ul li a:link,
 footer > div #f2 ul li a:visited {
@@ -527,11 +543,13 @@ footer > div #f2 ul li a:visited:active {
   color: #F7E8DC;
 }
 footer > div #f2 ul a {
-  width: 100%;
+  display: flex;
 }
 footer > div #f2 ul i {
+  padding-right: 10px;
   color: #C38583;
   display: flex-end;
+  text-align: left;
 }
 footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   color: #F7E8DC;
@@ -577,14 +595,111 @@ Features {
 /* =============
    new
 ============= */
-News > ul {
+#News {
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: grid;
+  grid-template-columns: 60px auto 60px;
+  grid-template-areas: ". News .";
 }
+@media (min-width: 1200px) {
+  #News {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#News ul {
+  grid-area: News;
+}
+@media (min-width: 768px) {
+  #News ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "News1 News2";
+  }
+}
+@media (min-width: 1024px) {
+  #News ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "News1 News2";
+  }
+}
+@media (min-width: 1200px) {
+  #News ul {
+    display: grid;
+    padding-right: 100px;
+    padding-left: 100px;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "News1 News2";
+  }
+}
+#News ul #News1 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: grid;
+  text-align: justify;
+}
+#News ul #News2 {
+  padding-top: 30px;
+  display: flex-end;
+  text-align: right;
+  margin-bottom: 30px;
+}
+#News ul #News2 input {
+  width: 90%;
+  margin-bottom: 30px;
+  color: #1D322B;
+  padding-bottom: 16px;
+}
+#News ul button {
+  background-color: #89514E;
+  border: none;
+  color: #F7E8DC;
+}
+#News ul button:hover, #News ul button:active {
+  color: #C38583;
+}
+
 /* =============
    Products
 ============= */
-products {
+#Products {
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". Products .";
+}
+@media (min-width: 1200px) {
+  #Products {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#Products ul {
+  grid-area: Products;
+}
+@media (min-width: 768px) {
+  #Products ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "p1 p2";
+  }
+}
+@media (min-width: 1024px) {
+  #Products ul {
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    grid-template-areas: "p1 p2";
+  }
+}
+#Products ul #p3 {
+  display: none;
+}
+#Products ul #p4 {
+  display: none;
+}
+#Products ul #p5 {
+  display: none;
 }
 
 /* =============

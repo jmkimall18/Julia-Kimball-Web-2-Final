@@ -3,8 +3,12 @@
 ============= */
 footer {
 
+   
+    padding-bottom: 50px;
+    
+
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 20px auto 20px;
     grid-template-areas: ". footer .";
   
 
@@ -12,8 +16,47 @@ footer {
         grid-template-columns: auto 1200px auto; 
     }
 
+    >div{
+        grid-area: footer;
+
+        h1 {
+        
+            
+            padding-bottom: 10px;
+           
+    
+            @include md {
+              
+                padding-bottom: 10px;
+            }
+
+    }
+
+    h3 {
+        
+            
+        padding-bottom: 4px;
+        padding-top: 4px;
+       
+
+        @include md {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+}
+
+    
+
+
+}
+
   >div{
-    padding-left: 10px;
+    
+   
+    padding-left: 40px;
+    
+    padding-top: 5px;
     border-left: 2px solid $black;
     margin-bottom: 0px;
     
@@ -21,41 +64,66 @@ footer {
     grid-area: footer;
     @include md{
         display: grid;
-        grid-template-columns: 50% auto; 
+        grid-template-columns:repeat(2,1fr); 
         grid-template-areas: 
-        "footera f2"
-        "f2 f2";
+        
+        "footera f2";
             }
+
+           
 
             @include xl{
 
                 grid-template-columns: repeat(2,1fr);
                 grid-template-areas: 
                 "footera f2"
-                "f2 f2";
+                "footera f2";
             }
-            margin-top: 20px;
-        li{
-           
-            margin-bottom: 0px;
-            margin-top: 16px;
-            padding-left: 10px;
-           
-        #footera{
-            display: flex;
-            padding-top: 20px;
-            padding-bottom: 16px;
-           
+            ul{
+                padding-bottom: 16px;
+
+                address{
+                    margin-top: 10px;
+                }
+                
+                a{
+                    color: black;
+                    display: flex;
+                   margin-top: 16px;
+    
+                }
+
+               
+                    
+                    #footera{
+
+                      
+                i{
+                    &:hover,
+                    &:active {
+                color: $vanilla;
+                                 }
+                    
+                   
+            color: #C38583;
+                
+            display: flex-end;
+            text-align: left;
+                   
+                }
+
+                a{
+                    color: black;
+                    display: flex;
+    
+                }
+    
+               
+               
+                                     }
             
         }
-
-            @include md{
-                grid-area: footera;
-            }
-        }
-        >div{
-            display: flex-end;
-        }
+        
       
         #f2{
 
@@ -67,40 +135,30 @@ footer {
 
             h3 {
 
-                padding-bottom: 10px;
+                padding-bottom: 15px;
             }
            
             text-align: right;
-            @include md {
-                grid-area: follow;
-            }
-
-            @include xl {
-                text-align: right;
-            }
+            
 
             ul {
                 padding-top: 16px;
                 padding-bottom: 16px;
     
                 display: flex;
-
+                align-content: right;
                 
                 justify-content: flex-end;
                 
 
                 li {
                     display: flex;
-                    align-content: center;
-                    margin: 10px;
-                    @include md {
-                        margin: 0 10px;
-                    }
-
+                    align-content: right;
                     a:link,
                     a:visited {
                        
                         font-size: rem-calc(30);
+                        
 
                         &:hover,
                         &:active {
@@ -114,14 +172,14 @@ footer {
                     
 
                         a{ 
+                            display: flex;
                             
-                            width: 100%;
+                           
                            
             
                         }
-                     
-                    
                         i{
+                            padding-right: 10px;
                             &:hover,
                             &:active {
                         color: $vanilla;
@@ -131,8 +189,10 @@ footer {
                     color: #C38583;
                         
                     display: flex-end;
+                    text-align: left;
                            
-                        }
+                     
+        
 
         }
 
@@ -140,3 +200,4 @@ footer {
 }
 }
 
+}

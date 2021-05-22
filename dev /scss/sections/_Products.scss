@@ -2,6 +2,51 @@
    Products
 ============= */
 
-products{
+#Products{
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". Products .";
+  
+
+    @include xl{
+        grid-template-columns: auto 1200px auto; 
+    }
+    ul{
+        grid-area: Products;
+
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-template-areas: 
+            "p1 p2";
+                }
+
+            @include lg{
+             display: grid;
+                    
+            grid-template-columns: 50% auto auto;
+            grid-template-areas: 
+            "p1 p2";
+                }
+
+            #p3{
+                display: none;
+            }
+
+            #p4{
+                display: none;
+            }
+
+            #p5{
+                display: none;
+            }
+
+
+                        }
 }
