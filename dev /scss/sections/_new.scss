@@ -5,7 +5,8 @@
 #News{
    
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: $vanilla;
     
 
     display: grid;
@@ -21,6 +22,7 @@
        
         
         @include md{
+           
             display: grid;
             grid-template-columns: 50% auto; 
             grid-template-areas: 
@@ -46,6 +48,10 @@
                 }
 
             #News1{
+
+                h1{
+                    margin-bottom: 20px;
+                }
                 padding-top: 30px;
                 padding-bottom: 50px;
                 display: grid;
@@ -74,9 +80,8 @@
                
             }
             button {
-
-               
-               
+                border-radius: 3px;
+                padding: 4px;
                 background-color: $christmas;
                 border: none;
                 color: $vanilla;

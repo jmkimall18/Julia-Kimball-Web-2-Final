@@ -5,11 +5,11 @@
 #Products{
 
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     
 
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 20px auto 20px;
     grid-template-areas: ". Products .";
   
 
@@ -19,7 +19,7 @@
     ul{
         grid-area: Products;
 
-
+        
         @include md{
             display: grid;
             grid-template-columns: 50% auto; 
@@ -27,26 +27,126 @@
             "p1 p2";
                 }
 
-            @include lg{
-             display: grid;
-                    
-            grid-template-columns: 50% auto auto;
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% auto; 
             grid-template-areas: 
-            "p1 p2";
+            "p1 p2"
+            "p3 p4"
+            "p5";
+               
+            
+           
+        }
+
+            
+
+
+            #p1{
+                display: grid;
+               
+                @include md{
+                    margin-right: 30px;
+
                 }
+                
+                h1{
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+
+            #p2{
+               
+                margin-top: 45px;
+                margin-right: 45px;
+                text-align: justify;
+                display: grid;
+
+            }
 
             #p3{
                 display: none;
+                @include lg{
+                    display: grid;
+                
+                    
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
             }
 
             #p4{
                 display: none;
+                @include lg{
+                    display: grid;
+                }
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
             }
+
+            
 
             #p5{
                 display: none;
+                @include lg{
+                    display: grid;
+                }
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+            
+
+            #p6{
+                display:ruby-base;
+                text-align: center;
+                button{
+
+                    @include md{
+                        display: none;
+                    }
+
+                    @include lg{
+
+                        display: none;
+                    }
+                    
+                    margin-top: 20px;
+                     padding-bottom: 0px;
+                     padding-top: 16px;
+                     
+        
+                     
+                     padding: 3px 6px;
+                     background-color: $christmas;
+                     border: none;
+                     color: $vanilla;
+        
+                     &:hover,
+                     &:active {
+                         color: #C38583;
+                     
+                    }
+                 }        
             }
 
 
-                        }
+           
+        }
+
+        div{ 
+         }       
+
+                       
 }

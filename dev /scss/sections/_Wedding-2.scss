@@ -1,0 +1,163 @@
+/* =============
+   Wedding-2
+============= */
+
+#s1{
+   
+  h1{
+     display: none;
+     @include md{ 
+        margin-left: 20px;
+         display: grid;
+        
+        text-align: left;}
+        @include lg{ 
+            margin-left: 20px;
+            display: grid;
+           
+           text-align: left;}
+           @include xl{ 
+            
+            display: grid;
+            text-align: center;}
+           
+           
+           }
+        }
+      
+      
+  
+  
+#Wedding-2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". Wedding-2 .";
+  
+
+    @include xl{
+        grid-template-columns: auto 1200px auto; 
+    }
+    ul{
+        display: none;
+        grid-area: Wedding-2;
+
+        @include md{
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-template-areas: 
+            "wedding3 wedding4"
+            "wedding3 wedding4";
+        }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 100%; 
+            grid-template-areas: 
+            "wedding3" 
+            "wedding4";
+        }
+
+        @include xl{
+            display: grid;
+        }
+        #wedding3{
+            padding: 20px;
+            background-color: $vanilla;
+            h3{
+                text-align: center;
+                padding-bottom: 5.5px;
+                @include lg{
+                    padding-left: 300px;
+                    padding-right: 300px;
+                    text-align: left;
+                }
+              
+            }
+            display: grid;
+            text-align: justify;
+
+            @include lg{
+                p{
+                    padding-left: 300px;
+                    padding-right: 300px;
+
+                }
+            }
+
+
+        }   
+
+        #wedding4{
+            padding: 20px;
+            background-color: $vanilla;
+            h3{
+                text-align: center;
+                @include lg{
+                    padding-left: 300px;
+                    padding-right: 300px;
+                    text-align: left;
+                }
+              
+            }
+            display: grid;
+            text-align: justify;
+            @include lg{
+                
+                p{
+                    padding-left: 300px;
+                    padding-right: 300px;
+
+
+                }
+            }
+
+
+        }   
+
+        article{
+
+            button {
+                display: flex;
+       
+                font-size: 14px;
+                font-family: 'Work Sans';
+                font-weight: 400;
+                transition: 0.25s;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 73%;
+                margin-right: auto;
+                border-radius: 4px;
+                background-color: $christmas;
+                border: none;
+                color: $vanilla;
+                &:hover, &:active{
+                    color: #C38583;
+
+                }
+
+                @include lg{
+                    margin-left: 60%;
+                margin-right: auto;
+                }
+            }
+        }
+
+         
+
+            p{
+                padding-bottom: 20px;
+            }
+
+                }
+
+              
+
+            }
+
+    
