@@ -32,6 +32,8 @@
             grid-template-columns: 50% auto; 
             grid-template-areas: 
             "p1 p2"
+            "p1 p2"
+            "p1 p2"
             "p3 p4"
             "p5";
                
@@ -47,6 +49,7 @@
                
                 @include md{
                     margin-right: 30px;
+                    margin-bottom: 40px;
 
                 }
                 

@@ -537,6 +537,14 @@
       "oAP" : "\/dev \/content\/services.html",
       "oF" : 0
     },
+    "\/dev \/content\/services2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/services2.html",
+      "oF" : 0
+    },
     "\/dev \/content\/Vendors.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -839,6 +847,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/scss\/sections\/_services.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev \/scss\/sections\/_services2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/scss\/sections\/_services2.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

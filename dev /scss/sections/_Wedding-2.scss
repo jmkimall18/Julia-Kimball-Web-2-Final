@@ -2,35 +2,13 @@
    Wedding-2
 ============= */
 
-#s1{
-   
-  h1{
-     display: none;
-     @include md{ 
-        margin-left: 20px;
-         display: grid;
-        
-        text-align: left;}
-        @include lg{ 
-            margin-left: 20px;
-            display: grid;
-           
-           text-align: left;}
-           @include xl{ 
-            
-            display: grid;
-            text-align: center;}
-           
-           
-           }
-        }
-      
-      
-  
   
 #Wedding-2{
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+   
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
     
 
     display: grid;
@@ -46,18 +24,14 @@
         grid-area: Wedding-2;
 
         @include md{
-            column-gap: 20px;
-            display: grid;
-            grid-template-columns: 50% auto; 
-            grid-template-areas: 
-            "wedding3 wedding4"
-            "wedding3 wedding4";
+           display: grid;
         }
 
         @include lg{
             display: grid;
             grid-template-columns: 100%; 
             grid-template-areas: 
+            "wedding2"
             "wedding3" 
             "wedding4";
         }
@@ -65,6 +39,23 @@
         @include xl{
             display: grid;
         }
+
+        #wedding2{
+            display: grid;
+
+            
+
+            h1{
+               
+                text-align: left;
+
+
+            }
+
+
+        }   
+
+
         #wedding3{
             padding: 20px;
             background-color: $vanilla;
@@ -122,7 +113,7 @@
         article{
 
             button {
-                display: flex;
+                display: flex-end;
        
                 font-size: 14px;
                 font-family: 'Work Sans';
@@ -130,7 +121,7 @@
                 transition: 0.25s;
                 margin-top: 20px;
                 margin-bottom: 20px;
-                margin-left: 73%;
+                margin-left: 70%;
                 margin-right: auto;
                 border-radius: 4px;
                 background-color: $christmas;
@@ -143,6 +134,11 @@
 
                 @include lg{
                     margin-left: 60%;
+                margin-right: auto;
+                }
+
+                @include lg{
+                    margin-left: 65%;
                 margin-right: auto;
                 }
             }

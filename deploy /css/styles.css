@@ -440,6 +440,7 @@ header > div button {
 ============= */
 footer {
   padding-bottom: 50px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". footer .";
@@ -695,7 +696,7 @@ Features {
   #Products ul {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "p1 p2" "p3 p4" "p5";
+    grid-template-areas: "p1 p2" "p1 p2" "p1 p2" "p3 p4" "p5";
   }
 }
 #Products ul #p1 {
@@ -704,6 +705,7 @@ Features {
 @media (min-width: 768px) {
   #Products ul #p1 {
     margin-right: 30px;
+    margin-bottom: 40px;
   }
 }
 #Products ul #p1 h1 {
@@ -850,33 +852,9 @@ Wedding {
 /* =============
    Wedding-2
 ============= */
-#s1 h1 {
-  display: none;
-}
-@media (min-width: 768px) {
-  #s1 h1 {
-    margin-left: 20px;
-    display: grid;
-    text-align: left;
-  }
-}
-@media (min-width: 1024px) {
-  #s1 h1 {
-    margin-left: 20px;
-    display: grid;
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  #s1 h1 {
-    display: grid;
-    text-align: center;
-  }
-}
-
 #Wedding-2 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". Wedding-2 .";
@@ -892,23 +870,26 @@ Wedding {
 }
 @media (min-width: 768px) {
   #Wedding-2 ul {
-    column-gap: 20px;
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "wedding3 wedding4" "wedding3 wedding4";
   }
 }
 @media (min-width: 1024px) {
   #Wedding-2 ul {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: "wedding3" "wedding4";
+    grid-template-areas: "wedding2" "wedding3" "wedding4";
   }
 }
 @media (min-width: 1200px) {
   #Wedding-2 ul {
     display: grid;
   }
+}
+#Wedding-2 ul #wedding2 {
+  display: grid;
+}
+#Wedding-2 ul #wedding2 h1 {
+  text-align: left;
 }
 #Wedding-2 ul #wedding3 {
   padding: 20px;
@@ -956,14 +937,14 @@ Wedding {
   }
 }
 #Wedding-2 ul article button {
-  display: flex;
+  display: flex-end;
   font-size: 14px;
   font-family: "Work Sans";
   font-weight: 400;
   transition: 0.25s;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 73%;
+  margin-left: 70%;
   margin-right: auto;
   border-radius: 4px;
   background-color: #89514E;
@@ -976,6 +957,12 @@ Wedding {
 @media (min-width: 1024px) {
   #Wedding-2 ul article button {
     margin-left: 60%;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #Wedding-2 ul article button {
+    margin-left: 65%;
     margin-right: auto;
   }
 }
