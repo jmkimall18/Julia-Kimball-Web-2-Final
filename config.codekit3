@@ -21,12 +21,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy \/img\/alter\/alterr.jpg" : {
+    "\/deploy \/img\/alter\/archhh.jpg" : {
       "ft" : 16384,
-      "iS" : 438359,
+      "iS" : 166026,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/alter\/alterr.jpg",
+      "oAP" : "\/deploy \/img\/alter\/archhh.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -125,12 +125,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/couple3\/car.jpg" : {
+    "\/deploy \/img\/couple3\/car2.jpg" : {
       "ft" : 16384,
-      "iS" : 31998,
+      "iS" : 87102,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/couple3\/car.jpg",
+      "oAP" : "\/deploy \/img\/couple3\/car2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -138,12 +138,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/couple4\/blue.jpg" : {
+    "\/deploy \/img\/couple4\/blue3.jpg" : {
       "ft" : 16384,
-      "iS" : 190541,
+      "iS" : 94506,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/couple4\/blue.jpg",
+      "oAP" : "\/deploy \/img\/couple4\/blue3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -335,6 +335,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy \/img\/header\/logo2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy \/img\/header\/logo3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy \/img\/header\/logo3.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
