@@ -696,7 +696,7 @@ Features {
   #Products ul {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "p1 p2" "p1 p2" "p1 p2" "p3 p4" "p5";
+    grid-template-areas: "p1 p2";
   }
 }
 #Products ul #p1 {
@@ -716,73 +716,150 @@ Features {
   margin-top: 20px;
   text-align: center;
 }
-#Products ul #p2 {
-  margin-top: 45px;
-  text-align: justify;
-  display: grid;
-}
-#Products ul #p3 {
-  display: none;
-}
-@media (min-width: 1024px) {
-  #Products ul #p3 {
-    display: grid;
-  }
-  #Products ul #p3 figcaption {
-    margin-top: 20px;
-    text-align: center;
-  }
-}
-#Products ul #p4 {
-  display: none;
-}
-@media (min-width: 1024px) {
-  #Products ul #p4 {
-    display: grid;
-  }
-}
-#Products ul #p4 figcaption {
-  margin-top: 20px;
+#Products ul #p1 > div {
   text-align: center;
 }
-#Products ul #p5 {
-  display: none;
-}
-@media (min-width: 1024px) {
-  #Products ul #p5 {
-    display: grid;
-  }
-}
-#Products ul #p5 figcaption {
-  margin-top: 20px;
-  text-align: center;
-}
-#Products ul #p6 {
-  display: ruby-base;
-  text-align: center;
-}
-#Products ul #p6 button {
+#Products ul #p1 > div button {
   margin-top: 20px;
   padding-bottom: 16px;
   padding-top: 16px;
+  border-radius: 3px;
   padding: 3px 6px;
   background-color: #89514E;
   border: none;
   color: #F7E8DC;
 }
 @media (min-width: 768px) {
-  #Products ul #p6 button {
+  #Products ul #p1 > div button {
+    display: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  #Products ul #p1 > div button {
+    display: none;
+  }
+}
+#Products ul #p1 > div button:hover, #Products ul #p1 > div button:active {
+  color: #C38583;
+}
+#Products ul #p2 p {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Products ul #p2 p {
+    padding-top: 50px;
+    text-align: justify;
+    display: grid;
+  }
+}
+
+/* =============
+   Products2
+============= */
+#Products2 {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". Products2 .";
+}
+@media (min-width: 1200px) {
+  #Products2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#Products2 ul {
+  grid-area: Products2;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+@media (min-width: 1024px) {
+  #Products2 ul {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-areas: "p3 p4 p5";
+  }
+}
+@media (min-width: 1200px) {
+  #Products2 ul {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-areas: "p3 p4 p5";
+  }
+}
+#Products2 ul #p3 {
+  margin-right: 50px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #Products2 ul #p3 {
+    display: grid;
+  }
+  #Products2 ul #p3 figcaption {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+#Products2 ul #p4 {
+  margin-right: 50px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #Products2 ul #p4 {
+    display: grid;
+  }
+}
+#Products2 ul #p4 figcaption {
+  margin-top: 20px;
+  text-align: center;
+}
+#Products2 ul #p5 {
+  margin-right: 50px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #Products2 ul #p5 {
+    display: grid;
+  }
+}
+#Products2 ul #p5 figcaption {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #Products2 ul #p5 > div {
+    padding-left: 130px;
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  #Products2 ul #p5 > div {
+    padding-left: 215px;
+    text-align: right;
+  }
+}
+#Products2 ul #p5 > div button {
+  margin-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #89514E;
+  border: none;
+  color: #F7E8DC;
+}
+@media (min-width: 768px) {
+  #Products2 ul #p5 > div button {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  #Products ul #p6 button {
-    display: none;
+  #Products2 ul #p5 > div button {
+    display: flex;
   }
 }
-#Products ul #p6 button:hover, #Products ul #p6 button:active {
+#Products2 ul #p5 > div button:hover, #Products2 ul #p5 > div button:active {
   color: #C38583;
 }
+
 /* =============
    services
 ============= */
@@ -832,8 +909,212 @@ Features {
 }
 
 /* =============
+   services2
+============= */
+#services2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #services2 {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-areas: ". services2 .";
+  }
+}
+@media (min-width: 1200px) {
+  #services2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#services2 ul {
+  grid-area: services2;
+}
+@media (min-width: 768px) {
+  #services2 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "s-mission sec3" "s-values sec4";
+  }
+}
+#services2 ul #s-mission {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: justify;
+}
+#services2 ul #s-mission > div {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #services2 ul #s-mission > div {
+    text-align: right;
+  }
+}
+#services2 ul #s-mission > div button {
+  margin-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #89514E;
+  border: none;
+  color: #F7E8DC;
+}
+#services2 ul #s-mission > div button:hover, #services2 ul #s-mission > div button:active {
+  color: #C38583;
+}
+#services2 ul #s-values {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: justify;
+}
+#services2 ul #s-values > div {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #services2 ul #s-values > div {
+    text-align: right;
+  }
+}
+#services2 ul #s-values > div button {
+  margin-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #89514E;
+  border: none;
+  color: #F7E8DC;
+}
+@media (min-width: 768px) {
+  #services2 ul #s-values > div button {
+    text-align: right;
+    display: flex-end;
+  }
+}
+#services2 ul #s-values > div button:hover, #services2 ul #s-values > div button:active {
+  color: #C38583;
+}
+/* =============
    Vendors
 ============= */
+#Vendors {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #Vendors {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-areas: ". Vendors .";
+  }
+}
+@media (min-width: 1200px) {
+  #Vendors {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#Vendors > div {
+  grid-area: Vendors;
+}
+#Vendors > div h1 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #Vendors > div h1 {
+    text-align: left;
+  }
+}
+#Vendors > div ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "F2 F3 F4 F5";
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "F2 F3" "F4 F5";
+  }
+}
+#Vendors > div ul #F2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  background-color: #F7E8DC;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul #F2 {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul #F2 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+#Vendors > div ul #F3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F7E8DC;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul #F3 {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul #F3 {
+    margin-bottom: 10px;
+  }
+}
+#Vendors > div ul #F4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul #F4 {
+    display: grid;
+    text-align: center;
+    background-color: #F7E8DC;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul #F4 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+#Vendors > div ul #F5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul #F5 {
+    display: grid;
+    text-align: center;
+    background-color: #F7E8DC;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul #F5 {
+    margin-bottom: 10px;
+  }
+}
+
 /* =============
    Wedding-gallery
 ============= */
@@ -863,79 +1144,97 @@ Wedding {
     grid-template-columns: auto 1200px auto;
   }
 }
-#Wedding-2 ul {
-  display: none;
+#Wedding-2 > div {
   grid-area: Wedding-2;
 }
+#Wedding-2 > div h1 {
+  display: none;
+}
 @media (min-width: 768px) {
-  #Wedding-2 ul {
+  #Wedding-2 > div h1 {
     display: grid;
+    text-align: left;
   }
 }
 @media (min-width: 1024px) {
-  #Wedding-2 ul {
+  #Wedding-2 > div h1 {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "wedding2" "wedding3" "wedding4";
+    text-align: left;
   }
 }
-@media (min-width: 1200px) {
-  #Wedding-2 ul {
+#Wedding-2 > div ul {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Wedding-2 > div ul {
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "wedding3 wedding4";
   }
 }
-#Wedding-2 ul #wedding2 {
-  display: grid;
+@media (min-width: 1024px) {
+  #Wedding-2 > div ul {
+    display: grid;
+    background-color: #F7E8DC;
+    grid-template-columns: auto;
+    grid-template-areas: "wedding3" "wedding4";
+  }
 }
-#Wedding-2 ul #wedding2 h1 {
-  text-align: left;
-}
-#Wedding-2 ul #wedding3 {
-  padding: 20px;
-  background-color: #F7E8DC;
+#Wedding-2 > div ul #wedding3 {
+  padding-top: 20px;
   display: grid;
   text-align: justify;
 }
-#Wedding-2 ul #wedding3 h3 {
+#Wedding-2 > div ul #wedding3 h3 {
   text-align: center;
-  padding-bottom: 5.5px;
 }
 @media (min-width: 1024px) {
-  #Wedding-2 ul #wedding3 h3 {
+  #Wedding-2 > div ul #wedding3 h3 {
     padding-left: 300px;
     padding-right: 300px;
     text-align: left;
   }
 }
+@media (min-width: 768px) {
+  #Wedding-2 > div ul #wedding3 {
+    background-color: #F7E8DC;
+    margin-right: 10px;
+  }
+}
 @media (min-width: 1024px) {
-  #Wedding-2 ul #wedding3 p {
+  #Wedding-2 > div ul #wedding3 p {
     padding-left: 300px;
     padding-right: 300px;
   }
 }
-#Wedding-2 ul #wedding4 {
-  padding: 20px;
-  background-color: #F7E8DC;
+#Wedding-2 > div ul #wedding4 {
+  padding-top: 20px;
   display: grid;
   text-align: justify;
 }
-#Wedding-2 ul #wedding4 h3 {
+#Wedding-2 > div ul #wedding4 h3 {
   text-align: center;
 }
 @media (min-width: 1024px) {
-  #Wedding-2 ul #wedding4 h3 {
+  #Wedding-2 > div ul #wedding4 h3 {
     padding-left: 300px;
     padding-right: 300px;
     text-align: left;
   }
 }
+@media (min-width: 768px) {
+  #Wedding-2 > div ul #wedding4 {
+    background-color: #F7E8DC;
+    margin-left: 10px;
+  }
+}
 @media (min-width: 1024px) {
-  #Wedding-2 ul #wedding4 p {
+  #Wedding-2 > div ul #wedding4 p {
     padding-left: 300px;
     padding-right: 300px;
   }
 }
-#Wedding-2 ul article button {
+#Wedding-2 > div ul article button {
   display: flex-end;
   font-size: 14px;
   font-family: "Work Sans";
@@ -944,27 +1243,28 @@ Wedding {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 70%;
-  margin-right: auto;
   border-radius: 4px;
   background-color: #89514E;
   border: none;
   color: #F7E8DC;
 }
-#Wedding-2 ul article button:hover, #Wedding-2 ul article button:active {
+#Wedding-2 > div ul article button:hover, #Wedding-2 > div ul article button:active {
   color: #C38583;
 }
 @media (min-width: 1024px) {
-  #Wedding-2 ul article button {
+  #Wedding-2 > div ul article button {
     margin-left: 60%;
     margin-right: auto;
   }
 }
 @media (min-width: 1024px) {
-  #Wedding-2 ul article button {
+  #Wedding-2 > div ul article button {
     margin-left: 65%;
     margin-right: auto;
   }
 }
-#Wedding-2 ul p {
+#Wedding-2 > div ul p {
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

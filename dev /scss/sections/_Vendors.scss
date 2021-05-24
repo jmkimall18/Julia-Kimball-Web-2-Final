@@ -2,6 +2,151 @@
    Vendors
 ============= */
 
-Vendors{
+#Vendors{
+
    
+   padding-top: 30px;
+   padding-bottom: 10px;
+    
+      @include md{
+      display: grid;
+      grid-template-columns: 30px auto 30px;
+      grid-template-areas: ". Vendors .";
+      }
+    
+  
+      @include xl{
+          grid-template-columns: auto 1200px auto; 
+      }
+
+      >div{
+      
+            grid-area: Vendors;
+
+            h1{
+               text-align: center;
+
+               @include lg{
+                  text-align: left;
+                  
+               }
+            }
+
+      ul{
+
+         margin-top: 30px;
+         margin-bottom: 30px;
+          
+
+          @include md{
+           
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%; 
+            grid-template-areas: 
+            "F2 F3 F4 F5";
+                }
+
+            @include lg{
+             display: grid;
+                    
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "F2 F3"
+            "F4 F5";
+                }
+
+    
+           #F2{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            background-color: $vanilla;
+            
+            text-align: center;
+
+            @include md{
+               margin-bottom: 0px;
+            }
+
+            @include lg{
+               margin-right: 10px;
+               margin-bottom: 10px;
+            }
+
+
+           }
+
+           #F3{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: $vanilla;
+            text-align: center;
+
+            @include md{
+               margin-bottom: 0px;
+            }
+
+            @include lg{
+              
+               margin-bottom: 10px;
+            }
+
+            
+         }
+
+         #F4{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: none;
+
+
+            @include md{
+               display: grid;
+               text-align: center;
+               background-color: $vanilla;
+               margin-bottom: 0px;
+              
+            }
+            @include lg{
+               margin-right: 10px;
+               margin-bottom: 10px;
+            }
+
+
+
+
+            
+         }
+
+         #F5{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: none;
+
+            @include md{
+               display: grid;
+               text-align: center;
+               background-color: $vanilla;
+               margin-bottom: 0px;
+               
+            }
+            @include lg{
+               margin-bottom: 10px;
+            }
+
+
+            
+         }
+
+
+
+
+
+
+         
+               }
+   }
 }
+
+   
+     

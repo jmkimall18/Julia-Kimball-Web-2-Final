@@ -1,0 +1,132 @@
+/* =============
+   Products2
+============= */
+
+#Products2{
+
+   
+
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". Products2 .";
+  
+
+    @include xl{
+        grid-template-columns: auto 1200px auto; 
+    }
+    ul{
+        grid-area: Products2;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        
+
+        
+        @include lg{
+            display: grid;
+            grid-template-columns: 35% 35% 35%; 
+            grid-template-areas: 
+            "p3 p4 p5";
+                }
+
+                @include xl{
+                    display: grid;
+                    grid-template-columns: 35% 35% 35%; 
+                    grid-template-areas: 
+                    "p3 p4 p5";
+                        }
+
+            #p3{
+                margin-right: 50px;
+                display: none;
+                @include lg{
+                    display: grid;
+                
+                    
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+            }
+
+            #p4{
+                margin-right: 50px;
+                display: none;
+                @include lg{
+                    display: grid;
+                }
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+
+            
+
+            #p5{
+                margin-right: 50px;
+                display: none;
+                @include lg{
+                    display: grid;
+                }
+                figcaption{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                >div{ 
+
+                    @include lg{
+                        padding-left: 130px;
+                        text-align: right;
+                    }
+                    @include xl{
+                        padding-left: 215px;
+                        text-align: right;
+                    }
+                    
+                    button{
+                      
+    
+                        @include md{
+                          
+                            display: none;
+                        }
+                    
+    
+                    @include lg{
+                        
+                        display: flex;
+                    }
+                    
+                    margin-top: 20px;
+                     padding-bottom: 16px;
+                     padding-top: 16px;
+                     
+        
+                     border-radius: 3px;
+                     padding: 3px 6px;
+                     background-color: $christmas;
+                     border: none;
+                     color: $vanilla;
+        
+                     &:hover,
+                     &:active {
+                         color: #C38583;
+                     
+                    }
+                 }        }
+            }
+            
+            
+           
+                
+            }
+
+
+           
+        }
+
+             
+
+                       
+

@@ -32,11 +32,7 @@
             grid-template-columns: 50% auto; 
             grid-template-areas: 
             "p1 p2"
-            "p1 p2"
-            "p1 p2"
-            "p3 p4"
-            "p5";
-               
+            
             
            
         }
@@ -59,66 +55,22 @@
                     margin-top: 20px;
                     text-align: center;
                 }
-            }
 
-            #p2{
-               
-                margin-top: 45px;
-                
-                text-align: justify;
-                display: grid;
 
-            }
 
-            #p3{
-                display: none;
-                @include lg{
-                    display: grid;
-                
+                >div{ 
+                    text-align: center;
+                   
+                    button{
+    
+                        @include md{
+                          
+                            display: flex-end;
+                        }
                     
-                figcaption{
-                    margin-top: 20px;
-                    text-align: center;
-                }
-            }
-            }
-
-            #p4{
-                display: none;
-                @include lg{
-                    display: grid;
-                }
-                figcaption{
-                    margin-top: 20px;
-                    text-align: center;
-                }
-            }
-
-            
-
-            #p5{
-                display: none;
-                @include lg{
-                    display: grid;
-                }
-                figcaption{
-                    margin-top: 20px;
-                    text-align: center;
-                }
-            }
-            
-
-            #p6{
-                display:ruby-base;
-                text-align: center;
-                button{
-
-                    @include md{
-                        display: none;
-                    }
-
+    
                     @include lg{
-
+    
                         display: none;
                     }
                     
@@ -127,7 +79,7 @@
                      padding-top: 16px;
                      
         
-                     
+                     border-radius: 3px;
                      padding: 3px 6px;
                      background-color: $christmas;
                      border: none;
@@ -138,15 +90,44 @@
                          color: #C38583;
                      
                     }
-                 }        
+                 }        }
+                   
+                
+    
             }
+
+            #p2{
+
+                p{
+                    display: none;
+
+                    @include md{
+                        padding-top: 50px;
+                    
+                       
+                        
+                        text-align: justify;
+                        display: grid;
+        
+        
+                        }
+
+                }
+
+               
+
+              
+                
+            }
+                
+            
+            
 
 
            
         }
 
-        div{ 
-         }       
+           
 
                        
 }

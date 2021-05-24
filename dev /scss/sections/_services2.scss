@@ -1,0 +1,152 @@
+
+
+/* =============
+   services2
+============= */
+
+
+
+
+
+
+#services2{
+   
+    padding-top: 30px;
+    padding-bottom: 10px;
+   
+    
+    @include md{
+        display: grid;
+        grid-template-columns: 30px auto 30px;
+        grid-template-areas: ". services2 .";
+        }
+      
+  
+
+    @include xl{
+        grid-template-columns: auto 1200px auto; 
+    }
+    ul{
+        grid-area: services2;
+        
+       
+        
+        @include md{
+           
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-template-areas: 
+            "s-mission sec3"
+            "s-values sec4";
+                }
+
+                #s-mission{
+                    margin-right: 30px;
+                    margin-left: 30px;
+
+                    text-align: justify;
+                    
+                    >div{ 
+                        text-align: center;
+
+                        @include md{
+                            text-align: right;
+                          
+                        }
+                    
+                       
+                        button{
+        
+                        margin-top: 20px;
+                         padding-bottom: 16px;
+                         padding-top: 16px;
+                         
+            
+                         border-radius: 3px;
+                         padding: 3px 6px;
+                         background-color: $christmas;
+                         border: none;
+                         color: $vanilla;
+            
+                         &:hover,
+                         &:active {
+                             color: #C38583;
+                         
+                        }
+                     }        }
+                       
+                    
+    
+
+
+                }
+
+
+                #sec3{
+                    
+                   
+
+
+
+
+
+
+                }
+
+
+                #s-values{
+                    margin-right: 30px;
+                    margin-left: 30px;
+
+                    text-align: justify;
+
+                    >div{ 
+                        text-align: center;
+                        @include md{
+                            text-align: right;
+                          
+                        }
+                       
+                        button{
+        
+                            @include md{
+                                text-align: right;
+                                display: flex-end;
+                            }
+                        
+        
+                        
+                        
+                        margin-top: 20px;
+                         padding-bottom: 16px;
+                         padding-top: 16px;
+                         
+            
+                         border-radius: 3px;
+                         padding: 3px 6px;
+                         background-color: $christmas;
+                         border: none;
+                         color: $vanilla;
+            
+                         &:hover,
+                         &:active {
+                             color: #C38583;
+                         
+                        }
+                     }        }
+
+
+                }
+
+
+                #sec4{
+
+
+
+
+                }
+                
+                
+                
+            }
+        }
