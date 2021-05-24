@@ -60,12 +60,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/chairs\/table-setting.jpg" : {
+    "\/deploy \/img\/chairs\/mtable.jpg" : {
       "ft" : 16384,
-      "iS" : 286165,
+      "iS" : 91739,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/chairs\/table-setting.jpg",
+      "oAP" : "\/deploy \/img\/chairs\/mtable.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -99,12 +99,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/couple2\/girls.jpg" : {
+    "\/deploy \/img\/couple\/couple2.jpg" : {
       "ft" : 16384,
-      "iS" : 242618,
+      "iS" : 394663,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/couple2\/girls.jpg",
+      "oAP" : "\/deploy \/img\/couple\/couple2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/couple2\/girls2.jpg" : {
+      "ft" : 16384,
+      "iS" : 133298,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/couple2\/girls2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -138,12 +151,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/couple5\/happy.jpg" : {
+    "\/deploy \/img\/couple5\/cute.jpg" : {
       "ft" : 16384,
-      "iS" : 453805,
+      "iS" : 277943,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/couple5\/happy.jpg",
+      "oAP" : "\/deploy \/img\/couple5\/cute.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
