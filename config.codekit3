@@ -34,12 +34,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/bridal\/friends.jpg" : {
+    "\/deploy \/img\/bridal\/girlies.jpg" : {
       "ft" : 16384,
-      "iS" : 378559,
+      "iS" : 65467,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/bridal\/friends.jpg",
+      "oAP" : "\/deploy \/img\/bridal\/girlies.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -281,12 +281,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/hands\/rings.jpg" : {
+    "\/deploy \/img\/hands\/ringsss.jpg" : {
       "ft" : 16384,
-      "iS" : 280633,
+      "iS" : 52046,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/hands\/rings.jpg",
+      "oAP" : "\/deploy \/img\/hands\/ringsss.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -444,15 +444,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy \/img\/tablee\/table.jpg" : {
+    "\/deploy \/img\/tablee\/table2.jpg" : {
       "ft" : 16384,
-      "iS" : 354161,
+      "iS" : 60760,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy \/img\/tablee\/table.jpg",
+      "oAP" : "\/deploy \/img\/tablee\/table2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -537,12 +537,12 @@
       "oAP" : "\/dev \/content\/Products2.html",
       "oF" : 0
     },
-    "\/dev \/content\/services.kit" : {
+    "\/dev \/content\/Serv.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev \/content\/services.html",
+      "oAP" : "\/dev \/content\/Serv.html",
       "oF" : 0
     },
     "\/dev \/content\/services2.kit" : {
@@ -860,7 +860,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev \/scss\/sections\/_services.scss" : {
+    "\/dev \/scss\/sections\/_Serv.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -868,7 +868,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev \/scss\/sections\/_services.css",
+      "oAP" : "\/dev \/scss\/sections\/_Serv.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

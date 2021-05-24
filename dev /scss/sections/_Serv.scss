@@ -1,0 +1,128 @@
+/* =============
+   Serv
+============= */
+
+
+#Serv{
+    img{
+        width: 100%;
+    }
+    text-align: center;
+
+    padding-top: 30px;
+   padding-bottom: 10px;
+    
+      @include md{
+      display: grid;
+      grid-template-columns: 30px auto 30px;
+      grid-template-areas: ". Serv .";
+      }
+    
+  
+      @include xl{
+          grid-template-columns: auto 1200px auto; 
+      }
+
+      >div{
+      
+            grid-area: Serv;
+            
+
+            h1{
+               text-align: center;
+              
+               @include lg{
+                  text-align: left;
+                  
+               }
+            }
+
+      ul{
+        
+        padding-top: 30px;
+        padding-bottom: 0px;
+        
+
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%; 
+            grid-template-areas: 
+            "a1 a2 a3";
+                }
+
+            
+
+                    }
+
+
+            #a1{
+                background-color: $vanilla;
+                @include md{ 
+                    padding-bottom: 50px;
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    }
+                padding-bottom: 50px;
+                margin-left: 30px;
+                margin-right: 30px;
+                display: grid;
+                
+            }
+
+            #a2{
+                background-color: $vanilla;
+                padding-bottom: 50px;
+               
+                display: none;
+                @include md{
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    display: grid;
+                }
+            }
+
+            #a3{
+                background-color: $vanilla;
+                padding-bottom: 50px;
+                
+                
+                display: none;
+                @include md{
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    display: grid;
+                }
+            }
+
+
+            button{
+                      
+    
+                
+                  
+            display: flex-end;
+            text-align: right;
+           
+            margin-top: 40px;
+             padding-bottom: 16px;
+             padding-top: 16px;
+             
+
+             border-radius: 3px;
+             padding: 3px 6px;
+             background-color: $christmas;
+             border: none;
+             color: $vanilla;
+
+             &:hover,
+             &:active {
+                 color: #C38583;
+             
+            }
+         }     
+
+
+
+      }
+    }
