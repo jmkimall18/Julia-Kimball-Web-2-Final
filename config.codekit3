@@ -376,6 +376,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/Instyle\/InStyle.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy \/img\/Instyle\/InStyle.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy \/img\/knot\/kkot.png" : {
       "ft" : 32768,
       "iS" : 43779,
@@ -486,6 +496,29 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy \/img\/ww\/wire.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/ww\/Wire.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy \/img\/ww\/Wire.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy \/img\/ww\/www.jpg" : {
+      "ft" : 16384,
+      "iS" : 14228,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/ww\/www.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

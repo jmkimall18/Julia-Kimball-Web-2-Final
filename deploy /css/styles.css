@@ -431,6 +431,9 @@ header {
 header > div {
   grid-area: header;
 }
+header > div img {
+  grid-template-columns: 16px auto 16px;
+}
 header > div button {
   background-color: #F7E8DC;
 }
@@ -1035,6 +1038,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
+  margin-top: 20px;
   text-align: justify;
 }
 #services2 ul #s-values > div {
