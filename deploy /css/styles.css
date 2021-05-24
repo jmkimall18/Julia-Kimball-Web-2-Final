@@ -672,7 +672,7 @@ Features {
 ============= */
 #Products {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". Products .";
@@ -763,7 +763,7 @@ Features {
 }
 #Products ul #p6 button {
   margin-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 16px;
   padding-top: 16px;
   padding: 3px 6px;
   background-color: #89514E;
