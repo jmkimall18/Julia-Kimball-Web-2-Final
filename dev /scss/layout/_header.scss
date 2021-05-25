@@ -8,9 +8,7 @@ header {
 		grid-template-areas: ". header .";
        
         >div{
-            img{
-                grid-template-columns: 16px auto 16px;
-            }
+           
             grid-area: header;
 
             button{

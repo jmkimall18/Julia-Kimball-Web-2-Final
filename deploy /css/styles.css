@@ -431,9 +431,6 @@ header {
 header > div {
   grid-area: header;
 }
-header > div img {
-  grid-template-columns: 16px auto 16px;
-}
 header > div button {
   background-color: #F7E8DC;
 }
@@ -566,10 +563,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
    Features
 ============= */
 #Features {
-  display: grid;
+  display: none;
 }
 #Features img {
   width: 100%;
+}
+#Features #Features2 {
+  display: none;
 }
 
 /* =============
@@ -678,7 +678,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
    Products
 ============= */
 #Products {
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: 20px auto 20px;
@@ -686,6 +686,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Products img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #Products {
+    margin-top: 130px;
+  }
 }
 @media (min-width: 1200px) {
   #Products {
@@ -1194,11 +1199,222 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 /* =============
    Wedding-gallery
 ============= */
-#Wedding-g {
+#wedding-g {
   display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". wedding-gallery .";
 }
-#Wedding-g img {
-  width: 100%;
+@media (min-width: 1200px) {
+  #wedding-g {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#wedding-g > div {
+  grid-area: wedding-gallery;
+}
+@media (min-width: 768px) {
+  #wedding-g > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "gallery-title gallery-title" "gallery-content gallery-gallery";
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div h1 {
+    grid-area: gallery-title;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div h1 {
+    grid-area: gallery-title;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div section {
+    padding-top: 422px;
+    grid-area: gallery-content;
+    background-image: url("../img/couple/couple2.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div section {
+    padding-top: 422px;
+    grid-area: gallery-content;
+    background-image: url("../img/couple/couple2.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  #wedding-g > div section {
+    padding-top: 422px;
+    grid-area: gallery-content;
+    background-image: url("../img/couple/couple2.jpg");
+    background-size: cover;
+  }
+}
+#wedding-g > div section div {
+  background-image: url("../img/couple/couple2.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center -50px;
+}
+@media (min-width: 768px) {
+  #wedding-g > div section div {
+    display: none;
+  }
+}
+#wedding-g > div section article button {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #wedding-g > div section article button {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 3px;
+    padding: 3px 6px;
+    background-color: #89514E;
+    border: none;
+    color: #F7E8DC;
+  }
+  #wedding-g > div section article button:hover, #wedding-g > div section article button:active {
+    color: #C38583;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div section article h2 {
+    text-align: left;
+    padding: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: -410px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div section article h2 {
+    text-align: left;
+    padding: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: -380px;
+  }
+}
+#wedding-g > div section article p {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #wedding-g > div section article p {
+    background-color: #F7E8DC;
+    padding: 20px;
+    margin-right: 30px;
+    position: relative;
+    bottom: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div section article p {
+    background-color: #F7E8DC;
+    padding: 20px;
+    margin-right: 30px;
+    position: relative;
+    bottom: -60px;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside {
+    grid-area: gallery-gallery;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: repeat(3, 225px);
+    grid-template-areas: "g1 g1" "g2 g3" "g4 g4";
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul li {
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul #g1 {
+    grid-area: g1;
+    background-image: url("../img/couple2/girls2.jpg");
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul #g2 {
+    grid-area: g2;
+    background-image: url("../img/couple3/car2.jpg");
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div aside ul #g2 {
+    grid-area: g2;
+    background-image: url("../img/couple3/car2.jpg");
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul #g3 {
+    grid-area: g3;
+    background-image: url("../img/couple4/blue3.jpg");
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div aside ul #g3 {
+    grid-area: g3;
+    background-image: url("../img/couple4/blue3.jpg");
+  }
+}
+#wedding-g > div aside ul #g4 {
+  text-align: center;
+}
+#wedding-g > div aside ul #g4 button {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #89514E;
+  border: none;
+  color: #F7E8DC;
+}
+#wedding-g > div aside ul #g4 button:hover, #wedding-g > div aside ul #g4 button:active {
+  color: #C38583;
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul #g4 button {
+    margin-right: 0px;
+    position: relative;
+    top: 240px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div aside ul #g4 button {
+    display: none;
+    margin-right: 0px;
+    position: relative;
+    top: 240px;
+  }
+}
+@media (min-width: 768px) {
+  #wedding-g > div aside ul #g4 {
+    text-align: right;
+    grid-area: g4;
+    background-image: url("../img/alter/Arch.jpeg");
+    background-position: center -5px;
+  }
 }
 
 /* =============
@@ -1220,6 +1436,9 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". Wedding-2 .";
+}
+#Wedding-2 img {
+  width: 100%;
 }
 @media (min-width: 1200px) {
   #Wedding-2 {

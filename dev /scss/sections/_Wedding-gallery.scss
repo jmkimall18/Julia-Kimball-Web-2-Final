@@ -2,11 +2,267 @@
    Wedding-gallery
 ============= */
 
-#Wedding-g{
-    
-    img{
-        width: 100%;
+#wedding-g {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". wedding-gallery .";
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
     }
 
-    display: grid;
+    >div {
+        grid-area: wedding-gallery;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "gallery-title gallery-title"
+                "gallery-content gallery-gallery";
+                gap: 20px;
+        }
+
+        h1 {
+            
+            // style your text
+            @include md {
+                grid-area: gallery-title;
+                text-align: center;
+            }
+            @include lg {
+                grid-area: gallery-title;
+                text-align: left;
+            }
+        }
+
+        section {
+
+            @include md {
+                 // this is for the photo on the left
+                padding-top: 422px;
+                grid-area: gallery-content;
+                background-image: url("../img/couple/couple2.jpg");
+                background-size: cover;
+                
+            }
+            @include lg {
+                // this is for the photo on the left
+               padding-top: 422px;
+               grid-area: gallery-content;
+               background-image: url("../img/couple/couple2.jpg");
+               background-size: cover;
+               
+           }
+           @include xl {
+            // this is for the photo on the left
+           padding-top: 422px;
+           grid-area: gallery-content;
+           background-image: url("../img/couple/couple2.jpg");
+           background-size: cover;
+           
+           
+       }
+
+            div {
+                 // this is for mobile
+                background-image: url("../img/couple/couple2.jpg");
+                height: 185px;
+                background-size: cover;
+                background-position: center -50px;
+
+                @include md{
+                    display: none;
+                }
+            }
+
+            article{
+                button{
+
+                    display: none;
+
+
+                    @include lg{
+
+                    margin-bottom: 30px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-radius: 3px;
+                     padding: 3px 6px;
+                     background-color: $christmas;
+                     border: none;
+                     color: $vanilla;
+        
+                     &:hover,
+                     &:active {
+                         color: #C38583;
+                     
+                    }
+                                    }
+                }
+
+               
+           
+                h2 {
+                   @include md{ 
+                    text-align: left;
+                    padding: 20px;
+                    margin-right: 20px;
+                    position: relative;
+                    // add margin-top:100px to products
+                   top: -410px;
+                   }
+
+                   @include lg{ 
+                    text-align: left;
+                    padding: 20px;
+                    margin-right: 20px;
+                    position: relative;
+                    // add margin-top:100px to products
+                   top: -380px;
+                   }
+                }
+    
+                p {
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    @include md{
+                        background-color: $vanilla;
+                        padding: 20px;
+                        margin-right: 30px;
+                        position: relative;
+                        // add margin-top:100px to products
+                        bottom: -100px;
+                        }
+
+                        @include lg{
+                            background-color: $vanilla;
+                            padding: 20px;
+                            margin-right: 30px;
+                            position: relative;
+                            // add margin-top:100px to products
+                            bottom: -60px;
+                            }
+                    text-align: justify;
+                }
+
+
+                
+            }
+
+           
+
+        }
+
+        aside {
+            @include md {
+                grid-area: gallery-gallery;
+                 // this is for the images on the right
+            }
+
+            ul{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 60% auto;
+                    grid-template-rows: repeat(3, 225px);
+                    grid-template-areas: 
+                    "g1 g1"
+                    "g2 g3" 
+                    "g4 g4";
+                    gap: 20px;
+                }
+
+                li{
+                    @include md{
+                        background-size: cover;
+                    }
+                }
+
+                #g1{
+                    @include md{
+                        grid-area: g1;
+                        background-image: url("../img/couple2/girls2.jpg");
+                    }
+                }
+
+                #g2{
+                    @include md{
+                        grid-area: g2;
+                        background-image: url("../img/couple3/car2.jpg");
+                        background-position: center ;
+                    }
+                    
+                    @include lg{
+                        grid-area: g2;
+                        background-image: url("../img/couple3/car2.jpg");
+                    }
+                }
+
+                #g3{
+                    @include md{
+                        grid-area: g3;
+                        background-image: url("../img/couple4/blue3.jpg");
+                        background-position: center ;
+                    }
+
+                    @include lg{
+                        grid-area: g3;
+                        background-image: url("../img/couple4/blue3.jpg");
+                    }
+                }
+
+                #g4{ 
+                    text-align: center;
+                    button{
+
+                        margin-bottom: 30px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-radius: 3px;
+                         padding: 3px 6px;
+                         background-color: $christmas;
+                         border: none;
+                         color: $vanilla;
+            
+                         &:hover,
+                         &:active {
+                             color: #C38583;
+                         
+                        }
+                                @include md{ 
+                                   
+                                   
+                                    margin-right: 0px;
+                                    position: relative;
+                                    // add margin-top:100px to products
+                                   top: 240px;
+                                   }
+    
+                                   @include lg{ 
+                                   
+                                   display: none;
+                                    margin-right: 0px;
+                                    position: relative;
+                                    // add margin-top:100px to products
+                                   top: 240px;
+                                   }
+    
+                                
+                            }
+                    
+                    
+                    @include md{
+                        text-align: right;
+                        grid-area: g4;
+                        background-image: url("../img/alter/Arch.jpeg");
+                        background-position: center -5px;
+
+
+                        
+                       
+                    }
+                }
+            }
+        }
+    }
 }

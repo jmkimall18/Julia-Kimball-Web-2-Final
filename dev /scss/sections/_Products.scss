@@ -7,7 +7,7 @@
         width: 100%;
     }
 
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 20px;
     
 
@@ -15,9 +15,13 @@
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". Products .";
   
-
+    
+    @include md{
+        margin-top: 130px;
+    }
     @include xl{
         grid-template-columns: auto 1200px auto; 
+        
     }
     ul{
         grid-area: Products;
