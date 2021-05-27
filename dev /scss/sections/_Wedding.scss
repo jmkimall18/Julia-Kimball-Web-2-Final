@@ -3,7 +3,23 @@
 ============= */
 
 #Wedding{
+list-style-type: none;
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". Wedding .";
 
-    img{width: 100%;}
-    display: grid;
+img{
+    width: 100%;
 }
+
+@include xl{
+    grid-template-columns: auto 1200px auto;
+}
+
+>div {
+    grid-area: Wedding;
+
+}
+}
+
+    
