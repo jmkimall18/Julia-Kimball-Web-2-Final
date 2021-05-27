@@ -46,9 +46,13 @@
                 }
 
                 #s-mission{
-                    margin-bottom: 30px;
+                    margin-bottom: 0px;
                     margin-right: 30px;
                     margin-left: 30px;
+                    @include md{
+                        margin-left: 10px;
+                      
+                    }
 
                     text-align: justify;
                     
@@ -64,7 +68,7 @@
                         button{
                         
                          margin-top: 20px;
-                         padding-bottom: 16px;
+                         padding-bottom: 0px;
                          padding-top: 16px;
                          
             
@@ -92,7 +96,7 @@
                     
                    
 
-
+                    margin-top: 60px;
 
 
 
@@ -103,8 +107,12 @@
                 #s-values{
                     margin-right: 30px;
                     margin-left: 30px;
-                    margin-bottom: 30px;
-                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-top: 0px;
+                    @include md{
+                        margin-left: 10px;
+                      
+                    }
 
                     text-align: justify;
 
@@ -149,8 +157,8 @@
 
                 #sec4{
 
-
-
+                   
+                    margin-top: 60px;
 
                 }
                 
