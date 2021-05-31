@@ -190,6 +190,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/cut\/the-cut2.png" : {
+      "ft" : 32768,
+      "iS" : 4169,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/cut\/the-cut2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy \/img\/Folk2.png\/Folk.png" : {
       "ft" : 32768,
       "iS" : 1184,
@@ -307,11 +320,50 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/HB\/bb.png" : {
+      "ft" : 32768,
+      "iS" : 6901,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/HB\/bb.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/HB\/harper.png" : {
+      "ft" : 32768,
+      "iS" : 6000,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/HB\/harper.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy \/img\/HB\/HarpersBazaar.png" : {
       "ft" : 32768,
       "iS" : 134095,
       "oA" : 0,
       "oAP" : "\/deploy \/img\/HB\/HarpersBazaar.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/HB\/HarpersBazaar2.png" : {
+      "ft" : 32768,
+      "iS" : 6806,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/HB\/HarpersBazaar2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -376,6 +428,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy \/img\/Instyle\/in-style2.png" : {
+      "ft" : 32768,
+      "iS" : 7209,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/Instyle\/in-style2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy \/img\/Instyle\/InStyle.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -388,7 +453,7 @@
     },
     "\/deploy \/img\/knot\/kkot.png" : {
       "ft" : 32768,
-      "iS" : 43779,
+      "iS" : 22579,
       "oA" : 0,
       "oAP" : "\/deploy \/img\/knot\/kkot.png",
       "oF" : 0,
@@ -398,6 +463,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy \/img\/knot\/knott.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy \/img\/knot\/knott.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy \/img\/Leppo\/wo.jpg" : {
       "ft" : 16384,
@@ -430,6 +505,19 @@
       "iS" : 8213,
       "oA" : 0,
       "oAP" : "\/deploy \/img\/Moon\/moon2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy \/img\/Moon\/moon3.png" : {
+      "ft" : 32768,
+      "iS" : 3909,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/Moon\/moon3.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -512,6 +600,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy \/img\/ww\/wire2.png" : {
+      "ft" : 32768,
+      "iS" : 17252,
+      "oA" : 0,
+      "oAP" : "\/deploy \/img\/ww\/wire2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy \/img\/ww\/www.jpg" : {
       "ft" : 16384,

@@ -79,33 +79,39 @@
             }
 
             article{
-                button{
 
-                    display: none;
+                
+                    button{
 
-
-                    @include lg{
-
-                    margin-bottom: 30px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    border-radius: 3px;
-                     padding: 3px 6px;
-                     background-color: $christmas;
-                     border: none;
-                     color: $vanilla;
-        
-                     &:hover,
-                     &:active {
-                         color: #C38583;
-                     
+                        display: none;
+    
+    
+                        @include lg{
+                            display: grid;
+    
+                        margin-bottom: 30px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-radius: 3px;
+                         padding: 3px 6px;
+                         background-color: $christmas;
+                         border: none;
+                         color: $vanilla;
+            
+                         &:hover,
+                         &:active {
+                             color: #C38583;
+                         
+                        }
+                                        }
                     }
-                                    }
-                }
+                
+                
 
                
            
                 h2 {
+                    padding-top: 30px;
                    @include md{ 
                     text-align: left;
                     padding: 20px;
