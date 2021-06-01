@@ -14,7 +14,7 @@
 
    
     
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     
 
@@ -191,8 +191,8 @@
 
             border-radius: 2px;
             padding: 3px 6px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
             padding-top: 6px;
             padding-bottom: 6px;
             
@@ -212,20 +212,20 @@
 
                 }
                 @include md{
-                    margin-left: 70%;
+                    margin-left: 40%;
                 margin-right: auto;
                 margin-bottom: 30px;
                 }
 
 
                 @include lg{
+                    margin-left: 55%;
+                margin-right: auto;
+                margin-bottom: 30px;
+                }
+
+                @include xl{
                     margin-left: 60%;
-                margin-right: auto;
-                margin-bottom: 30px;
-                }
-
-                @include lg{
-                    margin-left: 65%;
                 margin-right: auto;
                 }
             }
