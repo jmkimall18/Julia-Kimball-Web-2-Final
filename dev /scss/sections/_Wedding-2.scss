@@ -70,7 +70,7 @@
 
         @include lg{
             display: grid;
-            background-color: $vanilla;
+           
             grid-template-columns: auto; 
             grid-template-areas: 
             "wedding3" 
@@ -106,7 +106,7 @@
             text-align: justify;
 
             @include md{
-                background-color: $vanilla;
+                background-color: #FCF5F1;;
                 margin-left: 10px;
              }
              @include lg{
@@ -154,7 +154,7 @@
             text-align: justify;
 
             @include md{
-                background-color: $vanilla;
+                background-color: #FCF5F1;;
                 margin-left: 10px;
              }
              @include lg{
@@ -206,7 +206,7 @@
             
            }
 
-                color: $vanilla;
+                color: #FCF5F1;;
                 &:hover, &:active{
                     color: #C38583;
 

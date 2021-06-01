@@ -65,7 +65,7 @@
             padding-top: 30px;
             padding-bottom: 30px;
             margin-bottom: 20px;
-            background-color: $vanilla;
+            background-color: $starry;
             
             text-align: center;
 
@@ -84,7 +84,7 @@
            #F3{
             padding-top: 30px;
             padding-bottom: 30px;
-            background-color: $vanilla;
+            background-color: $starry;
             text-align: center;
 
             @include md{
@@ -108,7 +108,7 @@
             @include md{
                display: grid;
                text-align: center;
-               background-color: $vanilla;
+               background-color: $starry;
                margin-bottom: 0px;
               
             }
@@ -131,7 +131,7 @@
             @include md{
                display: grid;
                text-align: center;
-               background-color: $vanilla;
+               background-color: $starry;
                margin-bottom: 0px;
                
             }
