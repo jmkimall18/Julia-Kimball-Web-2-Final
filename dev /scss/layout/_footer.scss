@@ -6,7 +6,7 @@ footer {
     img{
         width: 100%;
     }
-
+background-color:  #B7A9B5;
    
     padding-bottom: 50px;
     padding-top: 30px;
@@ -26,7 +26,7 @@ footer {
 
         h1 {
         
-            
+            color: #81747F;
             padding-bottom: 10px;
            
     
@@ -39,7 +39,7 @@ footer {
 
     h3 {
         
-            
+        color: $white;    
         padding-bottom: 4px;
         padding-top: 4px;
        
@@ -62,7 +62,7 @@ footer {
     padding-left: 40px;
     
     padding-top: 5px;
-    border-left: 2px solid $black;
+    border-left: 2px solid $white;
     margin-bottom: 0px;
     
 
@@ -89,10 +89,12 @@ footer {
 
                 address{
                     margin-top: 10px;
+                    color: $white;
+
                 }
                 
                 a{
-                    color: black;
+                    color: $white;
                     display: flex;
                    margin-top: 16px;
     
@@ -104,6 +106,7 @@ footer {
 
                       
                 i{
+                    
                     &:hover,
                     &:active {
                 color: $vanilla;
@@ -118,7 +121,7 @@ footer {
                 }
 
                 a{
-                    color: black;
+                    color:$white;
                     display: flex;
     
                 }
@@ -133,13 +136,13 @@ footer {
         #f2{
 
             h4 {
-
+                color: $white;
                 padding-bottom: 10px;
             }
 
 
             h3 {
-
+                color: $white;
                 padding-bottom: 15px;
             }
            
@@ -191,7 +194,7 @@ footer {
                                          }
                             
                            
-                    color: #C38583;
+                    color: $white;
                         
                     display: flex-end;
                     text-align: left;

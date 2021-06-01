@@ -447,6 +447,7 @@ header > div button {
     Footer
 ============= */
 footer {
+  background-color: #B7A9B5;
   padding-bottom: 50px;
   padding-top: 30px;
   display: grid;
@@ -465,6 +466,7 @@ footer > div {
   grid-area: footer;
 }
 footer > div h1 {
+  color: #81747F;
   padding-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -473,6 +475,7 @@ footer > div h1 {
   }
 }
 footer > div h3 {
+  color: #fff;
   padding-bottom: 4px;
   padding-top: 4px;
 }
@@ -485,7 +488,7 @@ footer > div h3 {
 footer > div {
   padding-left: 40px;
   padding-top: 5px;
-  border-left: 2px solid #000;
+  border-left: 2px solid #fff;
   margin-bottom: 0px;
   grid-area: footer;
 }
@@ -507,9 +510,10 @@ footer > div ul {
 }
 footer > div ul address {
   margin-top: 10px;
+  color: #fff;
 }
 footer > div ul a {
-  color: black;
+  color: #fff;
   display: flex;
   margin-top: 16px;
 }
@@ -522,16 +526,18 @@ footer > div ul #footera i:hover, footer > div ul #footera i:active {
   color: #F7E8DC;
 }
 footer > div ul #footera a {
-  color: black;
+  color: #fff;
   display: flex;
 }
 footer > div #f2 {
   text-align: right;
 }
 footer > div #f2 h4 {
+  color: #fff;
   padding-bottom: 10px;
 }
 footer > div #f2 h3 {
+  color: #fff;
   padding-bottom: 15px;
 }
 footer > div #f2 ul {
@@ -559,7 +565,7 @@ footer > div #f2 ul a {
 }
 footer > div #f2 ul i {
   padding-right: 10px;
-  color: #C38583;
+  color: #fff;
   display: flex-end;
   text-align: left;
 }
@@ -570,8 +576,435 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 /* =============
    Features
 ============= */
-#Features #Features2 {
+#Features {
+  padding-left: 30px;
+  padding-right: 30px;
   display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". features .";
+}
+@media (min-width: 1200px) {
+  #Features {
+    grid-template-columns: auto 1300px auto;
+  }
+}
+#Features > div {
+  grid-area: features;
+}
+@media (min-width: 768px) {
+  #Features > div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "logos" "infoo";
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "title title" "logos infoo";
+    gap: 20px;
+  }
+}
+#Features > div h1 {
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  #Features > div h1 {
+    grid-area: title;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div h1 {
+    grid-area: title;
+    text-align: left;
+  }
+}
+#Features > div ul {
+  grid-area: logos;
+  margin-bottom: 60px;
+  margin-right: 20px;
+  display: none;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #Features > div ul {
+    grid-area: logos;
+    display: grid;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul {
+    padding-left: 0px;
+    grid-area: logos;
+    display: grid;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul {
+    padding-left: 0px;
+    grid-area: logos;
+    display: grid;
+  }
+}
+@media (min-width: 768px) {
+  #Features > div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "icon6 icon3 icon4" "icon5 icon2 icon1";
+  }
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon1 img {
+    width: 114px;
+    height: 93px;
+    padding-top: 40px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon1 img {
+    width: 80px;
+    height: 65px;
+    padding-top: 40px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon1 img {
+    width: 114px;
+    height: 93px;
+    padding-top: 40px;
+    margin-left: 0px;
+    margin-right: 40px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon1 figcaption {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -70px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon1 figcaption {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -200px;
+    padding-left: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon1 figcaption {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -80px;
+    padding-left: 40px;
+  }
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon2 img {
+    width: 141px;
+    height: 40px;
+    padding-top: 80px;
+    padding-left: 55px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon2 img {
+    width: 130px;
+    height: 30px;
+    padding-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon2 img {
+    width: 198px;
+    height: 55px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon2 figcaption {
+    margin-top: 35px;
+    text-align: center;
+    margin-left: -30px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon2 figcaption {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -70px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon2 figcaption {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: -300px;
+    margin-left: 0px;
+  }
+}
+#Features > div ul #icon3 {
+  margin-right: 40px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon3 img {
+    width: 198px;
+    height: 149px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon3 img {
+    width: 139px;
+    height: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon3 img {
+    width: 198px;
+    height: 149px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#Features > div ul #icon3 figcaption {
+  margin-top: 20px;
+  text-align: center;
+}
+#Features > div ul #icon4 {
+  margin-top: -20px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon4 img {
+    width: 191px;
+    height: 191px;
+    margin-left: -30px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon4 img {
+    width: 135px;
+    height: 135px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -40px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon4 img {
+    width: 191px;
+    height: 191px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: -50px;
+  }
+}
+#Features > div ul #icon4 figcaption {
+  margin-top: 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon4 figcaption {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon4 figcaption {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon4 figcaption {
+    margin-right: 58px;
+  }
+}
+#Features > div ul #icon5 {
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon5 img {
+    width: 191px;
+    height: 107px;
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon5 img {
+    width: 135px;
+    height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon5 img {
+    width: 191px;
+    height: 107px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#Features > div ul #icon5 figcaption {
+  margin-top: 0px;
+  text-align: center;
+}
+#Features > div ul #icon6 figcaption {
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon6 img {
+    margin-left: 50px;
+    width: 146px;
+    height: 146px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon6 img {
+    margin-left: 0px;
+    width: 103px;
+    height: 103px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon6 img {
+    margin-left: 10px;
+    width: 146px;
+    height: 146px;
+  }
+}
+#Features > div #icon7 {
+  grid-area: infoo;
+  background-color: #E5CEC8;
+  margin-top: 50px;
+  margin-left: -50px;
+  margin-right: -46px;
+  margin-bottom: -50px;
+}
+@media (min-width: 768px) {
+  #Features > div #icon7 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div #icon7 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div #icon7 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+#Features > div #icon7 p {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #Features > div #icon7 p {
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div #icon7 p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div #icon7 p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 21px;
+  }
+}
+@media (min-width: 768px) {
+  #Features > div #icon7 {
+    margin-bottom: 70px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div #icon7 {
+    margin-bottom: 70px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div #icon7 {
+    margin-bottom: 90px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+#Features > div #icon7 article {
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #Features > div #icon7 article {
+    text-align: right;
+    padding-bottom: 0px;
+  }
+}
+#Features > div #icon7 article button {
+  margin-top: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 2px;
+  background-color: #81747F;
+  border: none;
+  color: #F7E8DC;
+}
+#Features > div #icon7 article button:hover, #Features > div #icon7 article button:active {
+  color: #C38583;
 }
 
 /* =============
@@ -591,7 +1024,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #herooo {
-    height: 500px;
+    height: 370px;
     width: 100%;
   }
 }
@@ -602,7 +1035,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #herooo {
-    height: 600px;
+    height: 800px;
   }
 }
 #herooo #heroinfo {
@@ -645,9 +1078,9 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 3px 6px;
-  background-color: #89514E;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -741,14 +1174,30 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   color: #1D322B;
   padding-bottom: 16px;
 }
-#News ul button {
-  border-radius: 3px;
-  padding: 4px;
-  background-color: #89514E;
+#News ul article {
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #News ul article {
+    text-align: right;
+    padding-bottom: 0px;
+  }
+}
+#News ul article button {
+  margin-top: 20px;
+  padding-bottom: 0px;
+  padding-top: 16px;
+  border-radius: 2px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
-#News ul button:hover, #News ul button:active {
+#News ul article button:hover, #News ul article button:active {
   color: #C38583;
 }
 
@@ -759,7 +1208,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-top: 0px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 40px auto 40px;
   grid-template-areas: ". Products .";
 }
 #Products img {
@@ -816,9 +1265,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 20px;
   padding-bottom: 16px;
   padding-top: 16px;
-  border-radius: 3px;
-  padding: 3px 6px;
-  background-color: #89514E;
+  border-radius: 2px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -851,7 +1303,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 ============= */
 #Products2 {
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 40px auto 40px;
   grid-template-areas: ". Products2 .";
 }
 #Products2 img {
@@ -920,39 +1372,25 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 20px;
   text-align: center;
 }
-@media (min-width: 1024px) {
-  #Products2 ul #p5 > div {
-    padding-left: 130px;
-    text-align: right;
-  }
+#Products2 ul #p5 article {
+  text-align: right;
+  padding-bottom: 0px;
 }
-@media (min-width: 1200px) {
-  #Products2 ul #p5 > div {
-    padding-left: 215px;
-    text-align: right;
-  }
-}
-#Products2 ul #p5 > div button {
+#Products2 ul #p5 article button {
   margin-top: 20px;
   padding-bottom: 16px;
   padding-top: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 3px 6px;
-  background-color: #89514E;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
-@media (min-width: 768px) {
-  #Products2 ul #p5 > div button {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  #Products2 ul #p5 > div button {
-    display: flex;
-  }
-}
-#Products2 ul #p5 > div button:hover, #Products2 ul #p5 > div button:active {
+#Products2 ul #p5 article button:hover, #Products2 ul #p5 article button:active {
   color: #C38583;
 }
 
@@ -962,7 +1400,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #Serv {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 #Serv img {
   width: 100%;
@@ -970,7 +1408,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Serv {
     display: grid;
-    grid-template-columns: 30px auto 30px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". Serv .";
   }
 }
@@ -1002,22 +1440,22 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #Serv > div #a1 {
-  background-color: #F7E8DC;
-  padding-bottom: 50px;
+  background-color: #81747F;
+  padding-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
   display: grid;
 }
 @media (min-width: 768px) {
   #Serv > div #a1 {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     margin-left: 10px;
     margin-right: 5px;
   }
 }
 #Serv > div #a2 {
-  background-color: #F7E8DC;
-  padding-bottom: 50px;
+  background-color: #81747F;
+  padding-bottom: 30px;
   display: none;
 }
 @media (min-width: 768px) {
@@ -1028,8 +1466,8 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #Serv > div #a3 {
-  background-color: #F7E8DC;
-  padding-bottom: 50px;
+  background-color: #81747F;
+  padding-bottom: 30px;
   display: none;
 }
 @media (min-width: 768px) {
@@ -1043,11 +1481,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   display: flex-end;
   text-align: right;
   margin-top: 40px;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
   padding-top: 16px;
   border-radius: 3px;
   padding: 3px 6px;
-  background-color: #89514E;
+  background-color: transparent;
   border: none;
   color: #F7E8DC;
 }
@@ -1068,7 +1506,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #services2 {
     display: grid;
-    grid-template-columns: 30px auto 30px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". services2 .";
   }
 }
@@ -1113,9 +1551,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 20px;
   padding-bottom: 0px;
   padding-top: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 3px 6px;
-  background-color: #89514E;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -1149,9 +1591,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 20px;
   padding-bottom: 16px;
   padding-top: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 3px 6px;
-  background-color: #89514E;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -1181,7 +1627,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Vendors {
     display: grid;
-    grid-template-columns: 30px auto 30px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". Vendors .";
   }
 }
@@ -1303,7 +1749,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #wedding-g {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1250px auto;
   }
 }
 #wedding-g > div {
@@ -1331,10 +1777,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #wedding-g > div section {
-    padding-top: 422px;
+    padding-top: 190px;
+    margin-bottom: 0px;
     grid-area: gallery-content;
     background-image: url("../img/couple/couple2.jpg");
     background-size: cover;
+    background-position: right;
   }
 }
 @media (min-width: 1024px) {
@@ -1351,13 +1799,14 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     grid-area: gallery-content;
     background-image: url("../img/couple/couple2.jpg");
     background-size: cover;
+    background-position: top;
   }
 }
 #wedding-g > div section div {
   background-image: url("../img/couple/couple2.jpg");
   height: 185px;
   background-size: cover;
-  background-position: center -50px;
+  background-position: right -40px;
 }
 @media (min-width: 768px) {
   #wedding-g > div section div {
@@ -1370,12 +1819,15 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 1024px) {
   #wedding-g > div section article button {
     display: grid;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: -10x0px;
     border-radius: 3px;
-    padding: 3px 6px;
-    background-color: #89514E;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #81747F;
     border: none;
     color: #F7E8DC;
   }
@@ -1392,7 +1844,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding: 20px;
     margin-right: 20px;
     position: relative;
-    top: -410px;
+    top: -180px;
   }
 }
 @media (min-width: 1024px) {
@@ -1415,10 +1867,19 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding: 20px;
     margin-right: 30px;
     position: relative;
-    bottom: -100px;
+    bottom: -300px;
   }
 }
 @media (min-width: 1024px) {
+  #wedding-g > div section article p {
+    background-color: #F7E8DC;
+    padding: 20px;
+    margin-right: 30px;
+    position: relative;
+    bottom: -60px;
+  }
+}
+@media (min-width: 1200px) {
   #wedding-g > div section article p {
     background-color: #F7E8DC;
     padding: 20px;
@@ -1485,9 +1946,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 3px;
-  padding: 3px 6px;
-  background-color: #89514E;
+  border-radius: 2px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -1529,7 +1993,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #Wedding {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1300px auto;
   }
 }
 #Wedding > div {
@@ -1544,6 +2008,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #Wedding > div #wedding1 {
+  margin-top: 130px;
   grid-area: wedding-pic;
   background-image: url("../img/chairs/mtable.jpg");
   background-size: cover;
@@ -1554,6 +2019,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Wedding > div #wedding1 {
+    margin-top: 0px;
     height: 129px;
     width: 258px;
     display: grid;
@@ -1561,6 +2027,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #Wedding > div #wedding1 {
+    margin-top: 0px;
     height: 166px;
     width: 360px;
     display: grid;
@@ -1568,6 +2035,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #Wedding > div #wedding1 {
+    margin-top: 0px;
     height: 215px;
     width: 430px;
     display: grid;
@@ -1657,7 +2125,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-top: 16px;
   border-radius: 3px;
   padding: 3px 6px;
-  background-color: #89514E;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -1783,11 +2255,17 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Wedding > div #wedding2 aside article button {
   margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   padding-bottom: 0px;
   padding-top: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 3px 6px;
-  background-color: #89514E;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #81747F;
   border: none;
   color: #F7E8DC;
 }
@@ -1855,6 +2333,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Wedding-2 > div ul #wedding3 {
   padding-top: 20px;
+  padding-top: 20px;
   display: grid;
   text-align: justify;
 }
@@ -1862,6 +2341,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   text-align: center;
 }
 @media (min-width: 1024px) {
+  #Wedding-2 > div ul #wedding3 h3 {
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
   #Wedding-2 > div ul #wedding3 h3 {
     padding-left: 300px;
     padding-right: 300px;
@@ -1871,10 +2357,16 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Wedding-2 > div ul #wedding3 {
     background-color: #F7E8DC;
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 @media (min-width: 1024px) {
+  #Wedding-2 > div ul #wedding3 p {
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+}
+@media (min-width: 1200px) {
   #Wedding-2 > div ul #wedding3 p {
     padding-left: 300px;
     padding-right: 300px;
@@ -1890,6 +2382,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding4 h3 {
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Wedding-2 > div ul #wedding4 h3 {
     padding-left: 300px;
     padding-right: 300px;
     text-align: left;
@@ -1903,31 +2402,50 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding4 p {
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+}
+@media (min-width: 1200px) {
+  #Wedding-2 > div ul #wedding4 p {
     padding-left: 300px;
     padding-right: 300px;
   }
 }
 #Wedding-2 > div ul article button {
   display: flex-end;
-  font-size: 14px;
-  font-family: "Work Sans";
-  font-weight: 400;
-  transition: 0.25s;
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 70%;
-  border-radius: 4px;
-  background-color: #89514E;
+  padding-bottom: 0px;
+  padding-top: 16px;
+  border-radius: 2px;
+  padding: 3px 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #81747F;
   border: none;
+  color: #F7E8DC;
   color: #F7E8DC;
 }
 #Wedding-2 > div ul article button:hover, #Wedding-2 > div ul article button:active {
   color: #C38583;
 }
+#Wedding-2 > div ul article button:hover, #Wedding-2 > div ul article button:active {
+  color: #C38583;
+}
+@media (min-width: 768px) {
+  #Wedding-2 > div ul article button {
+    margin-left: 70%;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
 @media (min-width: 1024px) {
   #Wedding-2 > div ul article button {
     margin-left: 60%;
     margin-right: auto;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1024px) {

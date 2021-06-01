@@ -11,7 +11,7 @@
    
 
     display: grid;
-    grid-template-columns: 20px auto 20px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". Products2 .";
   
 
@@ -77,48 +77,39 @@
                     margin-top: 20px;
                     text-align: center;
                 }
-                >div{ 
-
-                    @include lg{
-                        padding-left: 130px;
-                        text-align: right;
-                    }
-                    @include xl{
-                        padding-left: 215px;
-                        text-align: right;
-                    }
+                
                     
-                    button{
-                      
-    
-                        @include md{
-                          
-                            display: none;
-                        }
-                    
-    
-                    @include lg{
+                    article{
                         
-                        display: flex;
+                        text-align: right;
+                        padding-bottom: 0px;
+                      
+                        
+                        button{
+                       
+                        margin-top: 20px;
+                         padding-bottom: 16px;
+                         padding-top: 16px;
+                         
+            
+                         border-radius: 2px;
+                         padding: 3px 6px;
+                         padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-right: 40px;
+                        padding-left: 40px;
+                         background-color: $iris;
+                         border: none;
+                         color: $vanilla;
+            
+                         &:hover,
+                         &:active {
+                             color: #C38583;
+                         
+                        }
+                     }    
                     }
-                    
-                    margin-top: 20px;
-                     padding-bottom: 16px;
-                     padding-top: 16px;
-                     
-        
-                     border-radius: 3px;
-                     padding: 3px 6px;
-                     background-color: $christmas;
-                     border: none;
-                     color: $vanilla;
-        
-                     &:hover,
-                     &:active {
-                         color: #C38583;
-                     
-                    }
-                 }        }
+                        
             }
             
             

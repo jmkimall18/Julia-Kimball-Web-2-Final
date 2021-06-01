@@ -12,7 +12,7 @@
     
 
     display: grid;
-    grid-template-columns: 20px auto 20px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". Products .";
   
     
@@ -86,9 +86,12 @@
                      padding-top: 16px;
                      
         
-                     border-radius: 3px;
-                     padding: 3px 6px;
-                     background-color: $christmas;
+                     border-radius: 2px;
+                     padding-top: 6px;
+                     padding-bottom: 6px;
+                     padding-right: 40px;
+                     padding-left: 40px;
+                     background-color: $iris;
                      border: none;
                      color: $vanilla;
         

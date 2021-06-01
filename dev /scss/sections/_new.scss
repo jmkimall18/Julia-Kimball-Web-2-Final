@@ -78,19 +78,38 @@
             }
 
 
-            button {
-                border-radius: 3px;
-                padding: 4px;
-                background-color: $christmas;
+            article{
+                text-align: center;
+                padding-bottom: 20px;
+                @include md{
+                    text-align: right;
+                    padding-bottom: 0px;
+                    
+                }
+                button{
+               
+                
+                margin-top: 20px;
+                padding-bottom: 0px;
+                padding-top: 16px;
+                
+    
+                border-radius: 2px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-right: 40px;
+                padding-left: 40px;
+                background-color: $iris;
                 border: none;
                 color: $vanilla;
-
+    
                 &:hover,
                 &:active {
                     color: #C38583;
-                }
-
-            }
+                
+               }
+    
+            }}
             }   
 
 

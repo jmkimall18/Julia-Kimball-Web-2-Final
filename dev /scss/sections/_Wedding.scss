@@ -13,7 +13,7 @@ grid-template-areas: ". Wedding .";
 
 
 @include xl{
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1300px auto;
 }
 
 >div {
@@ -29,7 +29,7 @@ grid-template-areas: ". Wedding .";
     }
 
    #wedding1{
-   
+   margin-top: 130px;
     grid-area: wedding-pic;
     background-image: url("../img/chairs/mtable.jpg");
     background-size: cover;
@@ -43,6 +43,7 @@ grid-template-areas: ". Wedding .";
     // margin-bottom: -50px;
 
     @include md{
+        margin-top: 0px;
 
         height: 129px;
         width: 258px;
@@ -50,14 +51,14 @@ grid-template-areas: ". Wedding .";
     }
     
     @include lg{
-
+        margin-top: 0px;
         height: 166px;
         width: 360px;
         display: grid;
     }
 
     @include xl{
-
+        margin-top: 0px;
         height: 215px;
         width: 430px;
         display: grid;
@@ -156,7 +157,11 @@ grid-template-areas: ". Wedding .";
 
             border-radius: 3px;
             padding: 3px 6px;
-            background-color: $christmas;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: $iris;
             border: none;
             color: $vanilla;
 
@@ -187,7 +192,7 @@ grid-template-areas: ". Wedding .";
     
 
     
-        
+       
 
         @include md {
             display: grid;
@@ -346,13 +351,19 @@ grid-template-areas: ". Wedding .";
            
             
             margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
             padding-bottom: 0px;
             padding-top: 16px;
             
 
-            border-radius: 3px;
+            border-radius: 2px;
             padding: 3px 6px;
-            background-color: $christmas;
+            padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-right: 40px;
+                        padding-left: 40px;
+            background-color: $iris;
             border: none;
             color: $vanilla;
 

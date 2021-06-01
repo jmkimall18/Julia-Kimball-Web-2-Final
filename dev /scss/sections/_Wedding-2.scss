@@ -84,10 +84,18 @@
             padding-top: 20px;
             
             
+            padding-top: 20px;
+           
+           
             h3{
+                
                 text-align: center;
-               
                 @include lg{
+                    padding-left: 270px;
+                    padding-right: 270px;
+                    text-align: left;
+                }
+                @include xl{
                     padding-left: 300px;
                     padding-right: 300px;
                     text-align: left;
@@ -99,13 +107,23 @@
 
             @include md{
                 background-color: $vanilla;
-                margin-right: 10px;
+                margin-left: 10px;
              }
+             @include lg{
+                
+                p{
+                    padding-left: 270px;
+                    padding-right: 270px;
 
-            @include lg{
+
+                }
+            }
+            @include xl{
+                
                 p{
                     padding-left: 300px;
                     padding-right: 300px;
+
 
                 }
             }
@@ -121,6 +139,11 @@
                 
                 text-align: center;
                 @include lg{
+                    padding-left: 270px;
+                    padding-right: 270px;
+                    text-align: left;
+                }
+                @include xl{
                     padding-left: 300px;
                     padding-right: 300px;
                     text-align: left;
@@ -134,7 +157,16 @@
                 background-color: $vanilla;
                 margin-left: 10px;
              }
-            @include lg{
+             @include lg{
+                
+                p{
+                    padding-left: 270px;
+                    padding-right: 270px;
+
+
+                }
+            }
+            @include xl{
                 
                 p{
                     padding-left: 300px;
@@ -152,26 +184,44 @@
             button {
                 display: flex-end;
        
-                font-size: 14px;
-                font-family: 'Work Sans';
-                font-weight: 400;
-                transition: 0.25s;
                 margin-top: 20px;
-                margin-bottom: 20px;
-                margin-left: 70%;
-               
-                border-radius: 4px;
-                background-color: $christmas;
-                border: none;
+            padding-bottom: 0px;
+            padding-top: 16px;
+            
+
+            border-radius: 2px;
+            padding: 3px 6px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            
+            background-color: $iris;
+            border: none;
+            color: $vanilla;
+
+            &:hover,
+            &:active {
+                color: #C38583;
+            
+           }
+
                 color: $vanilla;
                 &:hover, &:active{
                     color: #C38583;
 
                 }
+                @include md{
+                    margin-left: 70%;
+                margin-right: auto;
+                margin-bottom: 30px;
+                }
+
 
                 @include lg{
                     margin-left: 60%;
                 margin-right: auto;
+                margin-bottom: 30px;
                 }
 
                 @include lg{

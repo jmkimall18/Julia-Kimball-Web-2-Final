@@ -9,12 +9,12 @@
     }
     text-align: center;
 
-    padding-top: 30px;
-   padding-bottom: 10px;
+ padding-top: 30px;
+   padding-bottom: 30px;
     
       @include md{
       display: grid;
-      grid-template-columns: 30px auto 30px;
+      grid-template-columns: 40px auto 40px;
       grid-template-areas: ". Serv .";
       }
     
@@ -57,13 +57,13 @@
 
 
             #a1{
-                background-color: $vanilla;
+                background-color: $iris;
                 @include md{ 
-                    padding-bottom: 50px;
+                    padding-bottom:40px;
                     margin-left: 10px;
                     margin-right: 5px;
                     }
-                padding-bottom: 50px;
+                padding-bottom: 30px;
                 margin-left: 30px;
                 margin-right: 30px;
                 display: grid;
@@ -71,8 +71,8 @@
             }
 
             #a2{
-                background-color: $vanilla;
-                padding-bottom: 50px;
+                background-color: $iris;
+                padding-bottom: 30px;
                
                 display: none;
                 @include md{
@@ -83,8 +83,8 @@
             }
 
             #a3{
-                background-color: $vanilla;
-                padding-bottom: 50px;
+                background-color: $iris;
+                padding-bottom: 30px;
                 
                 
                 display: none;
@@ -105,13 +105,13 @@
             text-align: right;
            
             margin-top: 40px;
-             padding-bottom: 16px;
+             padding-bottom: 0px;
              padding-top: 16px;
              
 
              border-radius: 3px;
              padding: 3px 6px;
-             background-color: $christmas;
+             background-color: transparent;
              border: none;
              color: $vanilla;
 
