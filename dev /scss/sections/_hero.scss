@@ -3,9 +3,240 @@
 ============= */
 
 #hero{
-  
-   img{
-      width: 100%;
-   }
+   padding-top: 100px;
+   display: none;
+      @include md{
+         list-style-type: none;
+         display: grid;
+         grid-template-columns: 50px auto 50px;
+         grid-template-areas: ". hero .";
+      }
+     
+      
+         @include xl{
+          grid-template-columns: auto 1200px auto;
+      }
+      
+      >div {
+          grid-area: hero;
+      
+          @include md {
+              display: grid;
+              grid-template-columns: 50% auto;
+              grid-template-areas:
+                  "hero1 hero2"
+                  "hero1 hero2"
+                  "hero3 hero3";
+                  gap: 30px;
+          }
 
-}
+          @include lg {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "hero1 hero2"
+                "hero1 hero3";
+                gap: 30px;
+        }
+
+        #hero1{
+
+         >div{
+            
+        }
+       
+    
+        @include md {
+
+            grid-area: hero1;
+            
+        }
+
+        @include md {
+         display: grid;
+         // this is for the photo on the left
+        
+        grid-area: hero1;
+        background-image: url("../img/couple6/pretty2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 341px;
+        }
+    @include lg {
+     display: grid;
+        // this is for the photo on the left
+     
+       grid-area: hero1;
+       background-image: url("../img/couple6/pretty2.jpg");
+       background-size: cover;
+       height: 441px;
+        
+       
+   }
+   @include xl {
+     display: grid;
+    // this is for the photo on the left
+   
+   grid-area: hero1;
+   background-image: url("../img/couple6/pretty2.jpg");
+   background-size: cover;
+   background-position:  center;
+   height: 600px;
+   
+   
+               }
+
+         aside{
+
+
+        background-color: $starry;
+
+      margin-top: 230px;
+      margin-left: 30px;
+      margin-right: -50px;
+      margin-bottom: -60px;
+        
+
+      //   @include md{
+
+      //       margin-top: 270px;
+      //       margin-right: 30px;
+      //       margin-left: -40px;
+
+            
+    
+      //       position: relative;
+                       
+      //               left: -10px;
+
+
+      //   }
+
+      //   @include lg{
+
+      //       margin-top: 300px;
+      //       margin-right: 30px;
+      //       margin-left: -40px;
+
+            
+    
+      //       position: relative;
+                       
+      //               left: -10px;
+
+
+      //   }
+
+
+      //   @include xl{
+
+      //       margin-top: 450px;
+      //       margin-right: 30px;
+
+            
+    
+      //       position: relative;
+                       
+      //               left: -110px;
+      //   }
+
+
+            h3{}
+
+            article{
+
+               button{}
+            }
+
+
+
+
+         }
+
+        }
+
+        #hero2{
+         @include md {
+
+            grid-area: hero2;
+            
+        }
+
+         li{
+
+            h1{}
+            P{}
+         }
+        }
+
+        #hero3{
+
+         @include md {
+
+            grid-area: hero3;
+            
+        }
+
+         >div{
+            
+         }
+
+         @include md {
+            display: grid;
+            // this is for the photo on the left
+           
+           grid-area: hero3;
+           background-image: url("../img/Leppo/wo2.jpg");
+           background-size: cover;
+           background-position: center;
+           height: 132px;
+           width: 132px;
+           
+       }
+       @include lg {
+        display: grid;
+           // this is for the photo on the left
+        
+          grid-area: hero3;
+          background-image: url("../img/Leppo/wo2.jpg");
+          background-size: cover;
+          height: 122px;
+          width: 122px;
+
+         margin-left: 50px;
+         margin-top: 115px;
+           
+          
+      }
+      @include xl {
+        display: grid;
+       // this is for the photo on the left
+      
+      grid-area: hero3;
+      background-image: url("../img/Leppo/wo2.jpg");
+      background-size: cover;
+      height: 165px;
+      width: 165px;
+      
+      
+                  }
+
+         article{
+
+            @include lg{
+            margin-top: -50px;
+      margin-left: 100px;
+      margin-right: -300px;
+      margin-bottom: -60px;
+            }
+            h3{}
+            P{}
+
+         }
+        
+
+
+        }
+
+            }
+               }

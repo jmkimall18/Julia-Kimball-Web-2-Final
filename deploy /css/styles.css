@@ -1107,10 +1107,134 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 /* =============
    hero
 ============= */
-#hero img {
-  width: 100%;
+#hero {
+  padding-top: 100px;
+  display: none;
 }
-
+@media (min-width: 768px) {
+  #hero {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: ". hero .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#hero > div {
+  grid-area: hero;
+}
+@media (min-width: 768px) {
+  #hero > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "hero1 hero2" "hero1 hero2" "hero3 hero3";
+    gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "hero1 hero2" "hero1 hero3";
+    gap: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div #hero1 {
+    grid-area: hero1;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div #hero1 {
+    display: grid;
+    grid-area: hero1;
+    background-image: url("../img/couple6/pretty2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 341px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero1 {
+    display: grid;
+    grid-area: hero1;
+    background-image: url("../img/couple6/pretty2.jpg");
+    background-size: cover;
+    height: 441px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div #hero1 {
+    display: grid;
+    grid-area: hero1;
+    background-image: url("../img/couple6/pretty2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+}
+#hero > div #hero1 aside {
+  background-color: #F2E2D8;
+  margin-top: 230px;
+  margin-left: 30px;
+  margin-right: -50px;
+  margin-bottom: -60px;
+}
+@media (min-width: 768px) {
+  #hero > div #hero2 {
+    grid-area: hero2;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div #hero3 {
+    grid-area: hero3;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div #hero3 {
+    display: grid;
+    grid-area: hero3;
+    background-image: url("../img/Leppo/wo2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 132px;
+    width: 132px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero3 {
+    display: grid;
+    grid-area: hero3;
+    background-image: url("../img/Leppo/wo2.jpg");
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+    margin-left: 50px;
+    margin-top: 115px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div #hero3 {
+    display: grid;
+    grid-area: hero3;
+    background-image: url("../img/Leppo/wo2.jpg");
+    background-size: cover;
+    height: 165px;
+    width: 165px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero3 article {
+    margin-top: -50px;
+    margin-left: 100px;
+    margin-right: -300px;
+    margin-bottom: -60px;
+  }
+}
 /* =============
    new
 ============= */
@@ -1399,7 +1523,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 ============= */
 #Serv {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 200px;
   padding-bottom: 30px;
 }
 #Serv img {
