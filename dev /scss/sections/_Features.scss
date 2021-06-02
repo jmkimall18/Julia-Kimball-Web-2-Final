@@ -344,19 +344,19 @@
             background-color: #E5CEC8;
 
             margin-top: 50px;
-            margin-left: -50px;
+            margin-left: 30px;
             margin-right: -46px;
             margin-bottom: -50px;
 
             @include md{
-            margin-top: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
+                margin-top: 50px;
+                margin-left: -50px;
+                margin-right: -46px;
+                margin-bottom: -50px;
             }
             @include lg{
                 margin-top: 0px;
-                margin-left: 0px;
+                margin-left: 50px;
                 margin-right: 0px;
                 margin-bottom: 0px;
                 }
@@ -369,18 +369,15 @@
             
 
             p{
-                padding-top: 40px;
-                padding-bottom: 40px;
-                padding-right: 40px;
-                padding-left: 40px;
+                
                 text-align: justify;
                 @include md{
                     
                     text-align: justify;
                     padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-left: 50px;
-                    padding-right: 50px;
+                    padding-bottom: -20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
                     font-size: 16px;
         
                 }
@@ -388,9 +385,9 @@
                 @include lg{
 
                     text-align: justify;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-top: 0px;
+                    padding-left: 0px;
+                    padding-right: 0px;
                     font-size: 16px;
         
                 }
