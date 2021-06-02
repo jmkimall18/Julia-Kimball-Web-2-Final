@@ -4,19 +4,29 @@
 
 header {
    
-	display: grid;
-        grid-template-columns: 16px auto 16px;
-		grid-template-areas: ". header .";
-        background-color: $babypink;
-       
+    position: fixed;
+    left: 0;
+    background-color: $babypink;
+    width: 100%;
+    height: 100px;
+
         >div{
-            align-items: center;
-            grid-area: header;
+        
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+        "burger logos search";
 
-            #img6{
+        @include md {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-areas:
+            ". . search"
+            ". logos ."
+            ". nav .";
+        }
 
-                align-items: center;
-            }
+        
 
             button{
                 background-color: $vanilla;
