@@ -427,11 +427,16 @@ a {
     Header
 ============= */
 header {
+  z-index: 100;
   position: fixed;
   left: 0;
   background-color: #F2E9E4;
   width: 100%;
-  height: 100px;
+  margin-top: -180px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
 }
 header > div {
   display: grid;
@@ -442,10 +447,42 @@ header > div {
   header > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ". . search" ". logos ." ". nav .";
+    grid-template-areas: "burger logos search" ". nav .";
   }
 }
-header > div button {
+header > div #burger-container {
+  grid-area: burger;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  margin-left: 30px;
+  font-size: 40px;
+}
+header > div #burger-container #burger-icon {
+  color: #81747F;
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+header > div #burger-container #burger-icon:hover, header > div #burger-container #burger-icon:active {
+  color: #C38583;
+}
+@media (min-width: 768px) {
+  header > div #burger-container {
+    display: none;
+  }
+}
+header > div #img6 {
+  grid-area: logos;
+}
+header > div #nav-container {
+  grid-area: nav;
+  display: none;
+}
+header > div #search {
+  grid-area: search;
+}
+header > div #search button {
   background-color: #F7E8DC;
 }
 
@@ -901,7 +938,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   grid-area: infoo;
   background-color: #E5CEC8;
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: -46px;
   margin-right: -46px;
   margin-bottom: -50px;
 }
@@ -931,6 +968,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Features > div #icon7 p {
   text-align: justify;
+  padding-top: 50px;
+  padding-bottom: -20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   #Features > div #icon7 p {
@@ -1013,7 +1055,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
    Heading-1
 ============= */
 #herooo {
-  padding-top: 30px;
+  margin-top: 180px;
   display: grid;
   grid-area: hero;
   background-position: center;
@@ -1033,6 +1075,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #herooo {
+    padding-top: 0px;
     height: 550px;
   }
 }
@@ -1111,7 +1154,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
    hero
 ============= */
 #hero {
-  padding-top: 100px;
+  padding-top: 80px;
   display: none;
 }
 @media (min-width: 768px) {
