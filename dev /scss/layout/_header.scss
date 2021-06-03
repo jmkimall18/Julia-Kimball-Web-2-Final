@@ -8,9 +8,15 @@ header {
     left: 0;
     background-color: $babypink;
     width: 100%;
+   @include md{
     margin-top: -180px;
+   } 
+   margin-top: -180px;
    padding-top: 30px;
-   padding-bottom: 20px;
+   padding-bottom: 50px;
+   @include md{
+    padding-bottom: 50px;
+   }
    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
 
@@ -59,17 +65,29 @@ header {
 
         #img6{
             grid-area: logos;
+            
         }
 
         #nav-container{
             grid-area: nav;
             display: none;
+            
+            background-color: $forest;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+
+            @include lg {
+                background-color: $babypink;
+                display: block !important;
+
+            }  
         }
 
         #search{
             grid-area: search;
             button{
-                background-color: $vanilla;
+                background-color: transparent;
+
             }
         }
 
