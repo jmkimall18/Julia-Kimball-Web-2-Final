@@ -11,7 +11,11 @@ header {
    @include md{
     margin-top: -180px;
    } 
-   margin-top: -180px;
+
+   @include lg{
+    margin-top: -180px;
+   } 
+   margin-top: -184px;
    padding-top: 30px;
    padding-bottom: 50px;
    @include md{
@@ -72,19 +76,21 @@ header {
             grid-area: nav;
             display: none;
             
-            background-color: $forest;
+            
             grid-area: nav;
             padding: 20px 10px 10px;
 
-            @include lg {
-                background-color: $babypink;
-                display: block !important;
+            // @include lg {
+            //     background-color: $babypink;
+            //     display: block !important;
 
-            }  
+            // }  
         }
 
         #search{
             grid-area: search;
+            padding-left: 40px;
+            padding-top: 35px;
             button{
                 background-color: transparent;
 

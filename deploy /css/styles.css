@@ -432,13 +432,18 @@ header {
   left: 0;
   background-color: #F2E9E4;
   width: 100%;
-  margin-top: -180px;
+  margin-top: -184px;
   padding-top: 30px;
   padding-bottom: 50px;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
 @media (min-width: 768px) {
+  header {
+    margin-top: -180px;
+  }
+}
+@media (min-width: 1024px) {
   header {
     margin-top: -180px;
   }
@@ -488,18 +493,13 @@ header > div #img6 {
 header > div #nav-container {
   grid-area: nav;
   display: none;
-  background-color: #4E7851;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
-@media (min-width: 1024px) {
-  header > div #nav-container {
-    background-color: #F2E9E4;
-    display: block !important;
-  }
-}
 header > div #search {
   grid-area: search;
+  padding-left: 40px;
+  padding-top: 35px;
 }
 header > div #search button {
   background-color: transparent;
@@ -1074,12 +1074,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
    Heading-1
 ============= */
 #herooo {
-  margin-top: 180px;
+  margin-top: 170px;
   display: grid;
   grid-area: hero;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/hero/hero2.jpg");
+  background-image: url("../img/hero/video.jpg");
   height: 250px;
 }
 #herooo img {
@@ -1111,15 +1111,18 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #herooo #heroinfo article h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 20px;
 }
 @media (min-width: 768px) {
   #herooo #heroinfo article h1 {
     font-size: 30px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -1140,11 +1143,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   display: none;
   font-size: 0.875rem;
   margin-bottom: 30px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-radius: 2px;
-  padding: 3px 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
   background-color: #81747F;
   border: none;
   color: #F7E8DC;

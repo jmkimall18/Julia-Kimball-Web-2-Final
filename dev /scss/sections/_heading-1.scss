@@ -7,14 +7,14 @@
     
    
     
-    margin-top: 180px;
+    margin-top: 170px;
 
 
         display: grid;
         grid-area: hero;
         background-position: center;
         background-size: cover;
-        background-image: url("../img/hero/hero2.jpg");
+        background-image: url("../img/hero/video.jpg");
        
         img{
             object-fit: cover;
@@ -23,6 +23,7 @@
            
         }
         height: 250px;
+       
 
         @include md{
             height: 370px;
@@ -62,14 +63,18 @@
         
             h1{
                 color: $white;
-                font-size: 24px;
+                font-size: 16px;
                 font-weight: 400;
-                padding-top: 0px;
-                padding-bottom: 0px;
+                padding-top: 20px;
+                padding-bottom: 20px;
                 padding-left: 20px;
 
                 @include md{
                     font-size: 30px;
+                    padding-top: 90px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+    
                 }
 
                 @include lg{
@@ -96,11 +101,12 @@
                 display: none;
             font-size: rem-calc(14);
             margin-bottom: 30px;
-            padding-left: 20px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    border-radius: 2px;
-                     padding: 3px 6px;
+            
+            border-radius: 2px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-right: 40px;
+            padding-left: 40px;
                      background-color: $iris;
                      border: none;
                      color: $vanilla;
