@@ -47,6 +47,7 @@ header {
         }
 
         #burger-container{
+            display: flex-end;
             grid-area: burger;
             text-align: left;
             padding-top: 20px;
@@ -87,20 +88,36 @@ header {
             grid-area: nav;
             padding: 20px 10px 10px;
 
-            // @include lg {
-            //     background-color: $babypink;
-            //     display: block !important;
+            @include md {
+            background-color: $vanilla;
+             a{color: $denim;
+                &:hover,
+                &:active {
+                    color: #C38583;
+                }
+                font-size: 21px;
+            }
+            display: block !important;
 
-            // }  
+            }  
         }
 
         #search{
+            display: flex-end;
             grid-area: search;
             padding-left: 40px;
             padding-top: 35px;
             button{
                 background-color: transparent;
+                border: none;
+                color: $iris;
+                cursor: pointer;
+                font-size: rem-calc(30);
 
+                &:hover,
+                &:active {
+                    color: #C38583;
+                }
             }
         }
 

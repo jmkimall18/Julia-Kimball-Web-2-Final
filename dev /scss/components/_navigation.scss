@@ -5,3 +5,67 @@
 a {
     text-decoration: none;
 }
+
+#nav-container {
+
+ul{
+
+
+    @include md {
+
+        display: flex;
+    }
+
+    li {
+
+        margin-bottom: 20px;
+
+
+        @include md {
+            align-items: center;
+            border-right: 1px solid $vanilla;
+            display: flex;
+            margin-bottom: 0px;
+
+        }
+
+
+        a:link,
+        a:visited {
+           
+            align-items: center;
+            
+            padding: 0 20px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: -20px;
+            margin-bottom: -30px;
+            transition: 0.25s;
+
+            
+
+            &:hover,
+            &:active {
+                color: #C38583;
+            }
+
+
+        }
+
+
+
+
+
+
+}
+
+
+li:last-child {
+
+    border: none;
+
+}
+
+}
+
+            }

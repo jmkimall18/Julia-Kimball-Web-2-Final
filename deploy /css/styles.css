@@ -423,6 +423,41 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  #nav-container ul {
+    display: flex;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #nav-container ul li {
+    align-items: center;
+    border-right: 1px solid #F7E8DC;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  align-items: center;
+  padding: 0 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: -20px;
+  margin-bottom: -30px;
+  transition: 0.25s;
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #C38583;
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -473,6 +508,7 @@ header > div {
   }
 }
 header > div #burger-container {
+  display: flex-end;
   grid-area: burger;
   text-align: left;
   padding-top: 20px;
@@ -503,13 +539,34 @@ header > div #nav-container {
   grid-area: nav;
   padding: 20px 10px 10px;
 }
+@media (min-width: 768px) {
+  header > div #nav-container {
+    background-color: #F7E8DC;
+    display: block !important;
+  }
+  header > div #nav-container a {
+    color: #42465D;
+    font-size: 21px;
+  }
+  header > div #nav-container a:hover, header > div #nav-container a:active {
+    color: #C38583;
+  }
+}
 header > div #search {
+  display: flex-end;
   grid-area: search;
   padding-left: 40px;
   padding-top: 35px;
 }
 header > div #search button {
   background-color: transparent;
+  border: none;
+  color: #81747F;
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+header > div #search button:hover, header > div #search button:active {
+  color: #C38583;
 }
 
 /* =============
@@ -1293,7 +1350,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #herooo {
-    height: 370px;
+    height: 460px;
     width: 100%;
   }
 }
