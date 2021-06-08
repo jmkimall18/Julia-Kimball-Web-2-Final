@@ -586,7 +586,7 @@ footer > div {
   padding-left: 20px;
   padding-top: 40px;
   padding-top: 0px;
-  border-left: 2px solid #fff padd;
+  border-left: 2px solid #fff;
   margin-bottom: 0px;
   grid-area: footer;
 }
@@ -799,25 +799,34 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Features > div h1 {
   padding-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #Features > div h1 {
     grid-area: title;
     text-align: left;
+    margin-top: -40px;
   }
 }
 @media (min-width: 1024px) {
   #Features > div h1 {
     grid-area: title;
     text-align: left;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div h1 {
+    font-size: 35px;
   }
 }
 #Features > div ul {
   grid-area: logos;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  margin-top: 10px;
   margin-right: 20px;
-  display: none;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   #Features > div ul {
@@ -846,11 +855,17 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     grid-template-areas: "icon6 icon3 icon4" "icon5 icon2 icon1";
   }
 }
+#Features > div ul #icon1 img {
+  margin-top: 30px;
+  margin-left: 90px;
+}
 @media (min-width: 768px) {
   #Features > div ul #icon1 img {
+    margin-left: 0px;
     width: 114px;
     height: 93px;
     padding-top: 40px;
+    margin-top: 0px;
     margin-right: 40px;
   }
 }
@@ -873,6 +888,10 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     margin-right: 40px;
     padding-left: 0px;
   }
+}
+#Features > div ul #icon1 figcaption {
+  margin-left: 90px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon1 figcaption {
@@ -897,6 +916,10 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-left: 40px;
   }
 }
+#Features > div ul #icon2 img {
+  margin-top: 0px;
+  margin-left: 50px;
+}
 @media (min-width: 768px) {
   #Features > div ul #icon2 img {
     width: 141px;
@@ -904,6 +927,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-top: 80px;
     padding-left: 55px;
     padding-right: 20px;
+    margin-left: 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -913,6 +937,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-top: 75px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -922,7 +947,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 0px;
   }
+}
+#Features > div ul #icon2 figcaption {
+  margin-left: 100px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon2 figcaption {
@@ -949,11 +979,15 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #Features > div ul #icon3 {
   margin-right: 40px;
 }
+#Features > div ul #icon3 img {
+  display: none;
+}
 @media (min-width: 768px) {
   #Features > div ul #icon3 img {
     width: 198px;
     height: 149px;
     padding-right: 20px;
+    display: grid;
   }
 }
 @media (min-width: 1024px) {
@@ -962,6 +996,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     height: 105px;
     padding-left: 20px;
     padding-right: 20px;
+    display: grid;
   }
 }
 @media (min-width: 1200px) {
@@ -970,20 +1005,31 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     height: 149px;
     padding-left: 20px;
     padding-right: 20px;
+    display: grid;
   }
 }
 #Features > div ul #icon3 figcaption {
+  display: none;
   margin-top: 20px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #Features > div ul #icon3 figcaption {
+    display: grid;
+  }
+}
 #Features > div ul #icon4 {
   margin-top: -20px;
+}
+#Features > div ul #icon4 img {
+  display: none;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon4 img {
     width: 191px;
     height: 191px;
     margin-left: -30px;
+    display: grid;
   }
 }
 @media (min-width: 1024px) {
@@ -993,6 +1039,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: -40px;
+    display: grid;
   }
 }
 @media (min-width: 1200px) {
@@ -1002,15 +1049,18 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-left: 0px;
     padding-right: 20px;
     margin-left: -50px;
+    display: grid;
   }
 }
 #Features > div ul #icon4 figcaption {
   margin-top: 0px;
   text-align: center;
+  display: none;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon4 figcaption {
     margin-right: 50px;
+    display: grid;
   }
 }
 @media (min-width: 1024px) {
@@ -1026,11 +1076,15 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #Features > div ul #icon5 {
   padding-top: 50px;
 }
+#Features > div ul #icon5 img {
+  display: none;
+}
 @media (min-width: 768px) {
   #Features > div ul #icon5 img {
     width: 191px;
     height: 107px;
     padding-left: 40px;
+    display: grid;
   }
 }
 @media (min-width: 1024px) {
@@ -1039,6 +1093,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     height: 75px;
     padding-left: 20px;
     padding-right: 20px;
+    display: grid;
   }
 }
 @media (min-width: 1200px) {
@@ -1047,22 +1102,39 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     height: 107px;
     padding-left: 20px;
     padding-right: 20px;
+    display: grid;
   }
 }
 #Features > div ul #icon5 figcaption {
+  display: none;
   margin-top: 0px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #Features > div ul #icon5 figcaption {
+    display: grid;
+  }
+}
 #Features > div ul #icon6 figcaption {
+  display: none;
   margin-top: 20px;
   text-align: center;
   margin-right: 0px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon6 figcaption {
+    display: grid;
+  }
+}
+#Features > div ul #icon6 img {
+  display: none;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon6 img {
     margin-left: 50px;
     width: 146px;
     height: 146px;
+    display: grid;
   }
 }
 @media (min-width: 1024px) {
@@ -1072,6 +1144,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     height: 103px;
     padding-left: 30px;
     padding-right: 30px;
+    display: grid;
   }
 }
 @media (min-width: 1200px) {
@@ -1079,6 +1152,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     margin-left: 10px;
     width: 146px;
     height: 146px;
+    display: grid;
   }
 }
 #Features > div #icon7 {
@@ -1091,7 +1165,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Features > div #icon7 {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: -50px;
     margin-right: -46px;
     margin-bottom: -50px;
@@ -1152,7 +1226,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Features > div #icon7 {
     margin-bottom: 70px;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1190,6 +1264,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-right: 40px;
   padding-left: 40px;
   border-radius: 2px;
+  margin-bottom: 40px;
   background-color: #81747F;
   border: none;
   color: #F7E8DC;
@@ -1209,9 +1284,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   background-size: cover;
   background-image: url("../img/hero/video.jpg");
   height: 250px;
+  width: 100%;
 }
 #herooo img {
   object-fit: cover;
+  background-position: center;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1680,7 +1757,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #News ul #News1 h1 {
-    font-size: 30px;
+    font-size: 29px;
     padding-right: 50px;
   }
 }
@@ -1805,6 +1882,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Products {
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -1814,7 +1892,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #Products {
-    margin-top: 130px;
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 90px auto 90px;
     grid-template-areas: ". Products .";
@@ -1822,7 +1900,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #Products {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #Products ul {
@@ -1923,7 +2001,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #Products2 {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #Products2 ul {
@@ -2051,8 +2129,9 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Serv > div ul {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a1 a2 a3";
+    gap: 40px;
   }
 }
 #Serv > div #a1 {
@@ -2128,7 +2207,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #services2 {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #services2 ul {
@@ -2136,6 +2215,26 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #services2 ul h1 {
   padding-bottom: 20px;
+  padding-top: 40px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  #services2 ul h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #services2 ul h1 {
+    font-size: 35px;
+  }
+}
+#services2 ul p {
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  #services2 ul p {
+    font-size: 21px;
+  }
 }
 @media (min-width: 768px) {
   #services2 ul {
@@ -2164,7 +2263,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #services2 ul #s-mission > div button {
-  margin-top: 20px;
+  margin-top: 50px;
   padding-bottom: 0px;
   padding-top: 16px;
   border-radius: 2px;
@@ -2177,11 +2276,16 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   border: none;
   color: #F7E8DC;
 }
+@media (min-width: 768px) {
+  #services2 ul #s-mission > div button {
+    margin-top: 10px;
+  }
+}
 #services2 ul #s-mission > div button:hover, #services2 ul #s-mission > div button:active {
   color: #C38583;
 }
 #services2 ul #sec3 {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 #services2 ul #s-values {
   margin-right: 30px;
@@ -2204,7 +2308,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #services2 ul #s-values > div button {
-  margin-top: 20px;
+  margin-top: 50px;
   padding-bottom: 16px;
   padding-top: 16px;
   border-radius: 2px;
@@ -2221,6 +2325,11 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   #services2 ul #s-values > div button {
     text-align: right;
     display: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  #services2 ul #s-values > div button {
+    margin-top: 10px;
   }
 }
 #services2 ul #s-values > div button:hover, #services2 ul #s-values > div button:active {
@@ -2247,9 +2356,16 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     grid-template-areas: ". Vendors .";
   }
 }
+@media (min-width: 1024px) {
+  #Vendors {
+    display: grid;
+    grid-template-columns: 90px auto 90px;
+    grid-template-areas: ". Vendors .";
+  }
+}
 @media (min-width: 1200px) {
   #Vendors {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #Vendors > div {
@@ -2257,15 +2373,74 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Vendors > div h1 {
   text-align: center;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  #Vendors > div h1 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 1024px) {
   #Vendors > div h1 {
     text-align: left;
   }
 }
+@media (min-width: 1200px) {
+  #Vendors > div h1 {
+    font-size: 35px;
+  }
+}
 #Vendors > div ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#Vendors > div ul h2 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul h2 {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul h2 {
+    font-size: 20px;
+  }
+}
+#Vendors > div ul h3 {
+  font-size: 13px;
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul h3 {
+    font-size: 15px;
+  }
+}
+#Vendors > div ul address {
+  font-size: 13px;
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul address {
+    font-size: 15px;
+  }
+}
+#Vendors > div ul a {
+  margin-bottom: 0px;
+  color: black;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  #Vendors > div ul a {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #Vendors > div ul a {
+    font-size: 15px;
+  }
+}
+#Vendors > div ul i {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   #Vendors > div ul {
@@ -2290,7 +2465,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Vendors > div ul #F2 {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -2307,7 +2482,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Vendors > div ul #F3 {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -2325,7 +2500,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     display: grid;
     text-align: center;
     background-color: #F2E2D8;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -2344,7 +2519,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     display: grid;
     text-align: center;
     background-color: #F2E2D8;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -2359,6 +2534,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #wedding-g {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". wedding-gallery .";
@@ -2379,6 +2555,10 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     grid-template-areas: "gallery-title gallery-title" "gallery-content gallery-gallery";
     gap: 20px;
   }
+}
+#wedding-g > div h1 {
+  padding-bottom: 40px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #wedding-g > div h1 {
@@ -2432,10 +2612,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #wedding-g > div section article button {
   display: none;
+  text-align: right;
 }
 @media (min-width: 1024px) {
   #wedding-g > div section article button {
-    display: grid;
+    display: flex;
+    text-align: right;
     margin-bottom: -10px;
     padding-top: 20px;
     padding-bottom: -10x0px;
@@ -2453,7 +2635,8 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #wedding-g > div section article h2 {
-  padding-top: 30px;
+  padding-top: 50px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #wedding-g > div section article h2 {
@@ -2474,16 +2657,40 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #wedding-g > div section article p {
-  padding-bottom: 60px;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 16px;
   text-align: justify;
+}
+#wedding-g > div section article p button {
+  display: none;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #wedding-g > div section article p button {
+    display: flex;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding-top: -50px;
+    padding-bottom: -10x0px;
+    border-radius: 3px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #81747F;
+    border: none;
+    color: #F7E8DC;
+  }
+  #wedding-g > div section article p button:hover, #wedding-g > div section article p button:active {
+    color: #C38583;
+  }
 }
 @media (min-width: 768px) {
   #wedding-g > div section article p {
     background-color: #F2E2D8;
-    padding: 20px;
     margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
     bottom: -300px;
     font-size: 16px;
@@ -2492,13 +2699,10 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 1024px) {
   #wedding-g > div section article p {
     background-color: #F2E2D8;
-    padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    margin-bottom: -30px;
+    padding-top: 30px;
     margin-right: 30px;
     position: relative;
-    bottom: 9px;
+    bottom: -2px;
     font-size: 16px;
   }
 }
@@ -2508,7 +2712,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding: 20px;
     margin-right: 30px;
     position: relative;
-    bottom: -60px;
+    bottom: 0px;
     font-size: 21px;
   }
 }
@@ -2603,6 +2807,16 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     grid-area: g4;
     background-image: url("../img/alter/Arch.jpeg");
     background-position: center -5px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-g > div aside ul #g4 {
+    height: 240px;
+  }
+}
+@media (min-width: 1200px) {
+  #wedding-g > div aside ul #g4 {
+    height: 300px;
   }
 }
 
@@ -2703,19 +2917,19 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 768px) {
   #Wedding > div #wwinfo li h1 {
     padding-bottom: 40px;
-    padding-top: 0px;
+    padding-top: 30px;
   }
 }
 @media (min-width: 1024px) {
   #Wedding > div #wwinfo li h1 {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-top: 0px;
   }
 }
 @media (min-width: 1200px) {
   #Wedding > div #wwinfo li h1 {
-    padding-bottom: 50px;
-    padding-top: 0px;
+    padding-bottom: 100px;
+    padding-top: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -2805,7 +3019,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Wedding > div #wedding2 aside {
-    margin-top: 270px;
+    margin-top: 240px;
     margin-right: 30px;
     margin-left: -40px;
     position: relative;
@@ -2850,7 +3064,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 @media (min-width: 1024px) {
   #Wedding > div #wedding2 aside p {
     padding-top: 0px;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 40px;
@@ -2903,18 +3117,25 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #Wedding-2 {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 80px;
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". Wedding-2 .";
 }
 #Wedding-2 img {
   width: 100%;
 }
+@media (min-width: 1024px) {
+  #Wedding-2 {
+    display: grid;
+    grid-template-columns: 90px auto 90px;
+    grid-template-areas: ". Wedding-2 .";
+  }
+}
 @media (min-width: 1200px) {
   #Wedding-2 {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #Wedding-2 > div {
@@ -2924,6 +3145,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 70px;
   display: none;
   padding-bottom: 20px;
+  font-size: 30px;
 }
 @media (min-width: 768px) {
   #Wedding-2 > div h1 {
@@ -2935,6 +3157,13 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   #Wedding-2 > div h1 {
     display: grid;
     text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Wedding-2 > div h1 {
+    display: grid;
+    text-align: left;
+    font-size: 35px;
   }
 }
 #Wedding-2 > div ul {
@@ -2962,11 +3191,14 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Wedding-2 > div ul #wedding3 h3 {
   text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding3 h3 {
-    padding-left: 270px;
-    padding-right: 270px;
+    padding-left: 200px;
+    padding-right: 200px;
     text-align: left;
   }
 }
@@ -2975,6 +3207,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     padding-left: 300px;
     padding-right: 300px;
     text-align: left;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -2985,8 +3218,8 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding3 p {
-    padding-left: 270px;
-    padding-right: 270px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 @media (min-width: 1200px) {
@@ -3002,11 +3235,14 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Wedding-2 > div ul #wedding4 h3 {
   text-align: center;
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding4 h3 {
-    padding-left: 270px;
-    padding-right: 270px;
+    padding-left: 200px;
+    padding-right: 200px;
     text-align: left;
   }
 }
@@ -3021,18 +3257,26 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   #Wedding-2 > div ul #wedding4 {
     background-color: #FCF5F1;
     margin-left: 10px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
   #Wedding-2 > div ul #wedding4 p {
-    padding-left: 270px;
-    padding-right: 270px;
+    font-size: 16px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 @media (min-width: 1200px) {
   #Wedding-2 > div ul #wedding4 p {
     padding-left: 300px;
     padding-right: 300px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  #Wedding-2 > div ul #wedding4 p {
+    font-size: 21px;
   }
 }
 #Wedding-2 > div ul article button {
@@ -3081,4 +3325,10 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  #Wedding-2 > div ul p {
+    font-size: 21px;
+  }
 }

@@ -13,6 +13,7 @@
 
     @include md{
         padding-bottom: 40px;
+        padding-top: 40px;
 
     }
     
@@ -26,13 +27,13 @@
   
     
     @include lg{
-        margin-top: 130px;
+        margin-top: 90px;
         display: grid;
         grid-template-columns: 90px auto 90px;
         grid-template-areas: ". Products .";
     }
     @include xl{
-        grid-template-columns: auto 1200px auto; 
+        grid-template-columns: auto 1000px auto; 
         
     }
     ul{
