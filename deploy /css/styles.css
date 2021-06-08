@@ -430,7 +430,7 @@ header {
   z-index: 100;
   position: fixed;
   left: 0;
-  background-color: #F2E9E4;
+  background-color: #F7E8DC;
   width: 100%;
   margin-top: -184px;
   padding-top: 30px;
@@ -457,6 +457,13 @@ header > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "burger logos search";
+}
+@media (min-width: 768px) {
+  header > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "burger logos search" ". nav .";
+  }
 }
 @media (min-width: 768px) {
   header > div {
@@ -510,8 +517,8 @@ header > div #search button {
 ============= */
 footer {
   background-color: #B7A9B5;
-  padding-bottom: 50px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". footer .";
@@ -529,30 +536,64 @@ footer > div {
 }
 footer > div h1 {
   color: #81747F;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 12px;
 }
 @media (min-width: 768px) {
   footer > div h1 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div h1 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div h1 {
+    font-size: 14px;
   }
 }
 footer > div h3 {
   color: #fff;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 12px;
 }
 @media (min-width: 768px) {
   footer > div h3 {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div h3 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div h3 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div h3 {
+    font-size: 14px;
   }
 }
 footer > div {
-  padding-left: 40px;
-  padding-top: 5px;
-  border-left: 2px solid #fff;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-top: 0px;
+  border-left: 2px solid #fff padd;
   margin-bottom: 0px;
   grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    padding-top: 0px;
+  }
 }
 @media (min-width: 768px) {
   footer > div {
@@ -568,16 +609,48 @@ footer > div {
   }
 }
 footer > div ul {
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 footer > div ul address {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  footer > div ul address {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div ul address {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div ul address {
+    font-size: 14px;
+  }
 }
 footer > div ul a {
   color: #fff;
   display: flex;
-  margin-top: 16px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  footer > div ul a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div ul a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div ul a {
+    font-size: 14px;
+  }
 }
 footer > div ul #footera i {
   color: #C38583;
@@ -590,6 +663,22 @@ footer > div ul #footera i:hover, footer > div ul #footera i:active {
 footer > div ul #footera a {
   color: #fff;
   display: flex;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  footer > div ul #footera a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div ul #footera a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div ul #footera a {
+    font-size: 14px;
+  }
 }
 footer > div #f2 {
   text-align: right;
@@ -597,13 +686,45 @@ footer > div #f2 {
 footer > div #f2 h4 {
   color: #fff;
   padding-bottom: 10px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  footer > div #f2 h4 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #f2 h4 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div #f2 h4 {
+    font-size: 12px;
+  }
 }
 footer > div #f2 h3 {
   color: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #f2 h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #f2 h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div #f2 h3 {
+    font-size: 16px;
+  }
 }
 footer > div #f2 ul {
-  padding-top: 16px;
+  padding-top: 0px;
   padding-bottom: 16px;
   display: flex;
   align-content: right;
@@ -626,10 +747,17 @@ footer > div #f2 ul a {
   display: flex;
 }
 footer > div #f2 ul i {
-  padding-right: 10px;
+  margin-bottom: -10px;
+  padding-right: 20px;
+  margin-left: -5px;
   color: #fff;
   display: flex-end;
   text-align: left;
+}
+@media (min-width: 768px) {
+  footer > div #f2 ul i {
+    margin-top: 60px;
+  }
 }
 footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   color: #F7E8DC;
@@ -1100,7 +1228,8 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #herooo {
-    height: 800px;
+    height: 1000px;
+    width: 100%;
   }
 }
 #herooo #heroinfo {
@@ -1443,9 +1572,9 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #hero > div #hero3 article {
-    margin-top: -50px;
-    margin-left: 200px;
-    margin-right: -350px;
+    margin-top: -60px;
+    margin-left: 180px;
+    margin-right: -300px;
     margin-bottom: -60px;
   }
 }
@@ -1489,10 +1618,24 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 #News {
   padding-top: 30px;
   padding-bottom: 10px;
-  background-color: #F7E8DC;
+  background-color: #FCF5F1;
   display: grid;
   grid-template-columns: 60px auto 60px;
   grid-template-areas: ". News .";
+}
+@media (min-width: 768px) {
+  #News {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-areas: ". News .";
+  }
+}
+@media (min-width: 1024px) {
+  #News {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-areas: ". News .";
+  }
 }
 @media (min-width: 1200px) {
   #News {
@@ -1533,17 +1676,90 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #News ul #News1 h1 {
   margin-bottom: 20px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  #News ul #News1 h1 {
+    font-size: 30px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #News ul #News1 h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #News ul #News1 h1 {
+    font-size: 35px;
+  }
+}
+#News ul #News1 h4 {
+  font-size: 16px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #News ul #News1 h4 {
+    display: grid;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #News ul #News1 h4 {
+    display: grid;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #News ul #News1 h4 {
+    display: grid;
+    font-size: 21px;
+  }
+}
+#News ul #News1 p {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  #News ul #News1 p {
+    display: grid;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #News ul #News1 p {
+    display: grid;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #News ul #News1 p {
+    display: grid;
+    font-size: 21px;
+  }
 }
 #News ul #News2 {
-  padding-top: 30px;
   display: flex-end;
   text-align: right;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  #News ul #News2 {
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1024px) {
+  #News ul #News2 {
+    padding-top: 20px;
+  }
+}
 #News ul #News2 input {
   width: 90%;
   margin-bottom: 30px;
-  color: #1D322B;
+  border-radius: 4px;
   padding-bottom: 16px;
 }
 #News ul article {
@@ -1557,7 +1773,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #News ul article button {
-  margin-top: 20px;
+  margin-top: 0px;
   padding-bottom: 0px;
   padding-top: 16px;
   border-radius: 2px;
@@ -1578,7 +1794,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 ============= */
 #Products {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   display: grid;
   grid-template-columns: 40px auto 40px;
   grid-template-areas: ". Products .";
@@ -1588,7 +1804,20 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #Products {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  #Products {
+    margin-top: 160px;
+  }
+}
+@media (min-width: 1024px) {
+  #Products {
     margin-top: 130px;
+    display: grid;
+    grid-template-columns: 90px auto 90px;
+    grid-template-areas: ". Products .";
   }
 }
 @media (min-width: 1200px) {
@@ -1624,7 +1853,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Products ul #p1 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #Products ul #p1 h1 {
+    text-align: left;
+  }
 }
 #Products ul #p1 figcaption {
   margin-top: 20px;
@@ -1661,12 +1895,18 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Products ul #p2 p {
   display: none;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   #Products ul #p2 p {
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: justify;
     display: grid;
+  }
+}
+@media (min-width: 1200px) {
+  #Products ul #p2 p {
+    font-size: 21px;
   }
 }
 
@@ -1675,7 +1915,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 ============= */
 #Products2 {
   display: grid;
-  grid-template-columns: 40px auto 40px;
+  grid-template-columns: 90px auto 90px;
   grid-template-areas: ". Products2 .";
 }
 #Products2 img {
@@ -1688,8 +1928,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Products2 ul {
   grid-area: Products2;
-  padding-top: 30px;
-  padding-bottom: 0px;
+}
+@media (min-width: 1024px) {
+  #Products2 ul {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
 }
 @media (min-width: 1024px) {
   #Products2 ul {
@@ -2121,7 +2365,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 1200px) {
   #wedding-g {
-    grid-template-columns: auto 1250px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 #wedding-g > div {
@@ -2129,6 +2373,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #wedding-g > div {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "gallery-title gallery-title" "gallery-content gallery-gallery";
@@ -2149,7 +2394,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 @media (min-width: 768px) {
   #wedding-g > div section {
-    padding-top: 190px;
+    padding-top: 200px;
     margin-bottom: 0px;
     grid-area: gallery-content;
     background-image: url("../img/couple/couple2.jpg");
@@ -2229,8 +2474,9 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #wedding-g > div section article p {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   padding-top: 20px;
+  font-size: 16px;
   text-align: justify;
 }
 @media (min-width: 768px) {
@@ -2240,15 +2486,20 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     margin-right: 30px;
     position: relative;
     bottom: -300px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
   #wedding-g > div section article p {
     background-color: #F2E2D8;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: -30px;
     margin-right: 30px;
     position: relative;
-    bottom: -60px;
+    bottom: 9px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -2258,6 +2509,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
     margin-right: 30px;
     position: relative;
     bottom: -60px;
+    font-size: 21px;
   }
 }
 @media (min-width: 768px) {

@@ -8,8 +8,8 @@ footer {
     }
 background-color:  #B7A9B5;
    
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     
 
     display: grid;
@@ -27,12 +27,23 @@ background-color:  #B7A9B5;
         h1 {
         
             color: #81747F;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
+            font-size: 12px;
+            
            
-    
             @include md {
               
-                padding-bottom: 10px;
+                padding-bottom: 5px;
+                font-size: 12px;
+            }
+
+            @include lg{
+                font-size: 12px;
+            }
+
+            @include xl{
+                font-size: 14px;
+
             }
 
     }
@@ -40,13 +51,30 @@ background-color:  #B7A9B5;
     h3 {
         
         color: $white;    
-        padding-bottom: 4px;
-        padding-top: 4px;
+        padding-bottom: 2px;
+        padding-top: 2px;
        
 
         @include md {
-            padding-top: 4px;
-            padding-bottom: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        font-size: 12px;
+           
+        @include md {
+          
+            // padding-bottom: 10px;
+            font-size: 12px;
+        }
+
+        @include lg{
+            font-size: 12px;
+        }
+
+        @include xl{
+            font-size: 14px;
+
         }
 
 }
@@ -59,10 +87,17 @@ background-color:  #B7A9B5;
   >div{
     
    
-    padding-left: 40px;
+    padding-left: 20px;
     
-    padding-top: 5px;
-    border-left: 2px solid $white;
+    padding-top: 40px;
+    @include md {
+                      
+        padding-top: 0px;
+    }
+   
+
+    padding-top: 0px;
+    border-left: 2px solid $white padd;
     margin-bottom: 0px;
     
 
@@ -85,18 +120,50 @@ background-color:  #B7A9B5;
                 "footera f2";
             }
             ul{
-                padding-bottom: 16px;
+                padding-bottom: 10px;
 
                 address{
-                    margin-top: 10px;
+                    margin-top: 5px;
                     color: $white;
+                    font-size: 12px;
+           
+                    @include md {
+                      
+                        // padding-bottom: 10px;
+                        font-size: 12px;
+                    }
+        
+                    @include lg{
+                        font-size: 12px;
+                    }
+        
+                    @include xl{
+                        font-size: 14px;
+        
+                    }
 
                 }
                 
                 a{
                     color: $white;
                     display: flex;
-                   margin-top: 16px;
+                   margin-top: 10px;
+                   font-size: 12px;
+           
+                   @include md {
+                     
+                       // padding-bottom: 10px;
+                       font-size: 12px;
+                   }
+       
+                   @include lg{
+                       font-size: 12px;
+                   }
+       
+                   @include xl{
+                       font-size: 14px;
+       
+                   }
     
                 }
 
@@ -123,6 +190,22 @@ background-color:  #B7A9B5;
                 a{
                     color:$white;
                     display: flex;
+                    font-size: 12px;
+           
+                    @include md {
+                      
+                        // padding-bottom: 10px;
+                        font-size: 12px;
+                    }
+        
+                    @include lg{
+                        font-size: 12px;
+                    }
+        
+                    @include xl{
+                        font-size: 14px;
+        
+                    }
     
                 }
     
@@ -138,19 +221,52 @@ background-color:  #B7A9B5;
             h4 {
                 color: $white;
                 padding-bottom: 10px;
+                font-size: 12px;
+           
+                @include md {
+                  
+                    // padding-bottom: 10px;
+                    font-size: 12px;
+                }
+    
+                @include lg{
+                    font-size: 12px;
+                }
+    
+                @include xl{
+                    font-size: 12px;
+    
+                }
             }
 
 
             h3 {
                 color: $white;
-                padding-bottom: 15px;
+                padding-bottom: 8px;
+
+                font-size: 16px;
+           
+                @include md {
+                  
+                    // padding-bottom: 10px;
+                    font-size: 16px;
+                }
+    
+                @include lg{
+                    font-size: 16px;
+                }
+    
+                @include xl{
+                    font-size: 16px;
+    
+                }
             }
            
             text-align: right;
             
 
             ul {
-                padding-top: 16px;
+                padding-top: 0px;
                 padding-bottom: 16px;
     
                 display: flex;
@@ -186,8 +302,12 @@ background-color:  #B7A9B5;
                            
             
                         }
-                        i{
-                            padding-right: 10px;
+                        i{  
+                            @include md{
+                                margin-top: 60px;}
+                            margin-bottom: -10px;
+                            padding-right: 20px;
+                            margin-left: -5px;
                             &:hover,
                             &:active {
                         color: $vanilla;

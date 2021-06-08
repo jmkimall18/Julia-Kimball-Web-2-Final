@@ -11,7 +11,7 @@
    
 
     display: grid;
-    grid-template-columns: 40px auto 40px;
+    grid-template-columns: 90px auto 90px;
     grid-template-areas: ". Products2 .";
   
 
@@ -20,8 +20,12 @@
     }
     ul{
         grid-area: Products2;
-        padding-top: 30px;
-        padding-bottom: 0px;
+
+        @include lg{
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+       
         
 
         

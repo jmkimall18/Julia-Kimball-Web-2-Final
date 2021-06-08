@@ -6,12 +6,26 @@
    
     padding-top: 30px;
     padding-bottom: 10px;
-    background-color: $vanilla;
+    background-color: #FCF5F1;
     
 
     display: grid;
     grid-template-columns: 60px auto 60px;
     grid-template-areas: ". News .";
+
+    @include md{
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-areas: ". News .";
+
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-areas: ". News .";
+
+    }
   
 
     @include xl{
@@ -48,9 +62,74 @@
                 }
 
             #News1{
-
+               
                 h1{ 
                     margin-bottom: 20px;
+                    font-size: 24px;
+                    @include md{
+                        font-size: 30px;
+                        padding-right: 50px;
+
+                    }
+                    @include lg{
+                        font-size: 30px;
+
+                    }
+                    @include xl{
+                        font-size: 35px;
+
+                    }
+                }
+
+                h4{
+                    font-size: 16px;
+                    display: none;
+
+                    @include md{
+                        display: grid;
+                        font-size: 16px;
+                        padding-bottom: 20px;
+                        padding-right: 50px;
+
+                    }
+                    @include lg{
+                        display: grid;
+                        font-size: 16px;
+
+                    }
+                    @include xl{
+                        display: grid;
+                        font-size: 21px;
+
+                    }
+
+
+
+                }
+
+                p{
+                    font-size: 12px;
+                    
+
+                    @include md{
+                        display: grid;
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                        padding-right: 50px;
+
+                    }
+                    @include lg{
+                        display: grid;
+                        font-size: 16px;
+
+                    }
+                    @include xl{
+                        display: grid;
+                        font-size: 21px;
+
+                    }
+
+
                 }
                 padding-top: 30px;
                 padding-bottom: 50px;
@@ -61,14 +140,22 @@
             }   
             
             #News2{
-                padding-top: 30px;
+
+                @include md{
+                    padding-top: 90px;
+                }
+                
+                
+                @include lg{
+                    padding-top: 20px;
+                }
                 display: flex-end;
                 text-align: right;
                 margin-bottom: 30px;
                 input{ 
                     width: 90%;
                     margin-bottom: 30px;
-                    color: #1D322B;
+                    border-radius: 4px;
                     padding-bottom: 16px;
                     
                     
@@ -89,7 +176,7 @@
                 button{
                
                 
-                margin-top: 20px;
+                margin-top: 0px;
                 padding-bottom: 0px;
                 padding-top: 16px;
                 

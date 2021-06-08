@@ -6,7 +6,7 @@ header {
     z-index: 100;
     position: fixed;
     left: 0;
-    background-color: $babypink;
+    background-color: $vanilla;
     width: 100%;
    @include md{
     margin-top: -180px;
@@ -31,6 +31,13 @@ header {
         grid-template-areas:
         "burger logos search";
 
+        @include md {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-areas:
+            "burger logos search"
+            ". nav .";
+        }
         @include md {
             display: grid;
             grid-template-columns:repeat(3, 1fr);
