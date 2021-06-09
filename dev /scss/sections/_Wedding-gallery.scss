@@ -3,12 +3,17 @@
 ============= */
 
 #wedding-g {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+   
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 40px auto 40px;
     grid-template-areas: ". wedding-gallery .";
+
+    @include lg{
+        display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: ". wedding-gallery .";
+
+    }
 
     @include xl{
         grid-template-columns: auto 1200px auto;

@@ -701,6 +701,14 @@
       "oAP" : "\/dev \/content\/heading-1.html",
       "oF" : 0
     },
+    "\/dev \/content\/heading-2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/content\/heading-2.html",
+      "oF" : 0
+    },
     "\/dev \/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -827,8 +835,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev \/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy \/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -995,6 +1003,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev \/scss\/sections\/_heading-1.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev \/scss\/sections\/_heading-2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev \/scss\/sections\/_heading-2.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

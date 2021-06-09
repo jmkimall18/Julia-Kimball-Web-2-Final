@@ -2,529 +2,644 @@
    Features
 ============= */
 
+
+
 #Features{
 
-    padding-left: 30px;
-    padding-right: 30px;
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". features .";
 
+    @include lg{
+        display: grid;
+        grid-template-columns: 50px auto 50px;
+        grid-template-areas: ". features .";
+
+    }
+    
     @include xl{
         grid-template-columns: auto 1300px auto;
-       
     }
 
     >div {
-        grid-area: features;
-
-        @include md {
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-areas:
-                "title"
-                "logos"
-                "infoo";
-                gap: 20px;
-        }
-
-        @include lg{
-            display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas:
-                "title title"
-                "logos infoo";
-                gap: 20px;
-        }
-
-        h1 {
-            padding-bottom: 30px;
-            // style your text
-            font-size: 30px;
-            text-align: center;
-            @include md {
-                grid-area: title;
-                text-align: left;
-                margin-top: -40px;
-            }
-            @include lg {
-                grid-area: title;
-                text-align: left;
-                margin-top: 20px;
-            }
-
-            @include xl{
-                font-size: 35px;
-            }
-        }
-
+             grid-area: features;
         
+                 @include md {
+                 display: grid;
+                 grid-template-columns: 100%;
+                 grid-template-areas:
+                      "title"
+                     "logos"
+                       "infoo";
+                       gap: 20px;
+               }
+        
+             @include lg{
+                display: grid;
+                  grid-template-columns: 50% auto;
+                    grid-template-areas:
+                        "title title"
+                    "logos infoo";
+                     gap: 20px;
+               }
+        
+              h1 {
+                  padding-bottom: 30px;
+                     // style your text
+                    font-size: 30px;
+                  text-align: center;
+                   @include md {
+                        grid-area: title;
+                        text-align: left;
+                        
+                   }
+                    @include lg {
+                         grid-area: title;
+                       text-align: left;
+                   margin-top: 20px;
+                   }
+        
+                @include xl{
+                  font-size: 35px;
+              }
+            
+            }
 
-        ul{
+            ul{
             grid-area: logos;
             margin-bottom: 40px;
             margin-top: 10px;
             margin-right: 20px;
            
            
-            @include md {
+             @include md {
                 
-                grid-area: logos;
-                 // this is for the images on the right
+                 grid-area: logos;
                  display: grid;
+                 grid-template-columns:repeat(3, 1fr);
+                 grid-template-areas:
+                 "icon6 icon3 icon4"
+                "icon5 icon2 icon1";
+             }
+
+             @include lg {
+                
+                 padding-left: 0px;
+                
+             }
+             @include xl {
+                padding-left: 0px;
+                
+            }
+            
+
+            figcaption{
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             }
 
-            @include lg {
+
+
+
+
+
+
+            }
+
+            #icon7{
+
+                grid-area: infoo;
+           
+    background-color: #E5CEC8;
+            }
+
+}
+                    }
+
+// #Features{
+    
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". features .";
+
+//     @include xl{
+//         grid-template-columns: auto 1300px auto;
+       
+//     }
+
+//     >div {
+//         grid-area: features;
+
+//         @include md {
+//             display: grid;
+//             grid-template-columns: 100%;
+//             grid-template-areas:
+//                 "title"
+//                 "logos"
+//                 "infoo";
+//                 gap: 20px;
+//         }
+
+//         @include lg{
+//             display: grid;
+//             grid-template-columns: 50% auto;
+//             grid-template-areas:
+//                 "title title"
+//                 "logos infoo";
+//                 gap: 20px;
+//         }
+
+//         h1 {
+//             padding-bottom: 30px;
+//             // style your text
+//             font-size: 30px;
+//             text-align: center;
+//             @include md {
+//                 grid-area: title;
+//                 text-align: left;
+//                 margin-top: -40px;
+//             }
+//             @include lg {
+//                 grid-area: title;
+//                 text-align: left;
+//                 margin-top: 20px;
+//             }
+
+//             @include xl{
+//                 font-size: 35px;
+//             }
+//         }
+
+        
+
+//         ul{
+//             grid-area: logos;
+//             margin-bottom: 40px;
+//             margin-top: 10px;
+//             margin-right: 20px;
+           
+           
+//             @include md {
                 
-                padding-left: 0px;
-                grid-area: logos;
-                 // this is for the images on the right
-                 display: grid;
-            }
-            @include xl {
-                padding-left: 0px;
-                grid-area: logos;
-                 // this is for the images on the right
-                 display: grid;
-            }
-            @include md{
-                display: grid;
-                grid-template-columns:repeat(3, 1fr);
-                grid-template-areas:
-                "icon6 icon3 icon4"
-                "icon5 icon2 icon1";
+//                 grid-area: logos;
+//                  // this is for the images on the right
+//                  display: grid;
+//             }
+
+//             @include lg {
+                
+//                 padding-left: 0px;
+//                 grid-area: logos;
+//                  // this is for the images on the right
+//                  display: grid;
+//             }
+//             @include xl {
+//                 padding-left: 0px;
+//                 grid-area: logos;
+//                  // this is for the images on the right
+//                  display: grid;
+//             }
+//             @include md{
+//                 display: grid;
+//                 grid-template-columns:repeat(3, 1fr);
+//                 grid-template-areas:
+//                 "icon6 icon3 icon4"
+//                 "icon5 icon2 icon1";
                
                
-            }
+//             }
 
            
-            padding-bottom: 20px;
-            #icon1{
+//             padding-bottom: 20px;
+//             #icon1{
                 
-                img{ 
-                    margin-top: 30px;
-                    margin-left: 150px;
-                    @include md{
-                        margin-left: 0px;
-                        width: 114px;
-                        height: 93px;
-                padding-top: 40px;
-                margin-top: 0px;
-                margin-right: 40px;
-                    }
-                    @include lg{
-                    width: 80px;
-                    height: 65px;
-                padding-top: 40px;
-                margin-left: -50px;
-                margin-right: -50px;
-                padding-left: 50px;
-                }
-                @include xl{
-                    width: 114px;
-                    height: 93px;
-                    padding-top: 40px;
-                margin-left: 0px;
-                margin-right: 40px;
-                padding-left: 0px;
-                }
-                    }
+//                 img{ 
+//                     margin-top: 30px;
+//                     margin-left: 150px;
+//                     @include md{
+//                         margin-left: 0px;
+//                         width: 114px;
+//                         height: 93px;
+//                 padding-top: 40px;
+//                 margin-top: 0px;
+//                 margin-right: 40px;
+//                     }
+//                     @include lg{
+//                     width: 80px;
+//                     height: 65px;
+//                 padding-top: 40px;
+//                 margin-left: -50px;
+//                 margin-right: -50px;
+//                 padding-left: 50px;
+//                 }
+//                 @include xl{
+//                     width: 114px;
+//                     height: 93px;
+//                     padding-top: 40px;
+//                 margin-left: 0px;
+//                 margin-right: 40px;
+//                 padding-left: 0px;
+//                 }
+//                     }
                
-                figcaption{
-                    margin-left: 150px;
-                    margin-top: 30px;
-                    @include md{
-                        margin-top: 20px;
-                        text-align: center;
+//                 figcaption{
+//                     margin-left: 150px;
+//                     margin-top: 30px;
+//                     @include md{
+//                         margin-top: 20px;
+//                         text-align: center;
                         
-                        margin-left: -70px;
-                        }
-                    @include lg{
-                        margin-top: 20px;
-                        text-align: center;
-                        margin-left: -200px;
-                        padding-left: 150px;
-                        }
-                    @include xl{
-                    margin-top: 20px;
-                    text-align: center;
-                    margin-left: -80px;
-                        padding-left: 40px;
-                    }
+//                         margin-left: -70px;
+//                         }
+//                     @include lg{
+//                         margin-top: 20px;
+//                         text-align: center;
+//                         margin-left: -200px;
+//                         padding-left: 150px;
+//                         }
+//                     @include xl{
+//                     margin-top: 20px;
+//                     text-align: center;
+//                     margin-left: -80px;
+//                         padding-left: 40px;
+//                     }
                     
-                }
+//                 }
                
-            }
+//             }
 
-            #icon2{  
-                img{ 
-                    margin-top: 0px;
-                    margin-left: 110px;
+//             #icon2{  
+//                 img{ 
+//                     margin-top: 0px;
+//                     margin-left: 110px;
                    
                     
-                @include md{
-                    width: 141px;
-                    height: 40px;
-                    padding-top: 80px ;
-                    padding-left: 55px;
-                    padding-right: 20px;
-                    margin-left: 0px;
-                }
-                @include lg{
-                    width: 130px;
-                    height: 30px;
-                    padding-top: 75px ;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    margin-left: 0px;
-                }
-                @include xl{
-                    width: 198px;
-                    height: 55px;
-                    padding-top: 80px ;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    margin-left: 0px;
-                }
-            }
+//                 @include md{
+//                     width: 141px;
+//                     height: 40px;
+//                     padding-top: 80px ;
+//                     padding-left: 55px;
+//                     padding-right: 20px;
+//                     margin-left: 0px;
+//                 }
+//                 @include lg{
+//                     width: 130px;
+//                     height: 30px;
+//                     padding-top: 75px ;
+//                     padding-left: 20px;
+//                     padding-right: 20px;
+//                     margin-left: 0px;
+//                 }
+//                 @include xl{
+//                     width: 198px;
+//                     height: 55px;
+//                     padding-top: 80px ;
+//                     padding-left: 20px;
+//                     padding-right: 20px;
+//                     margin-left: 0px;
+//                 }
+//             }
                
-                figcaption{
-                    margin-left: 160px;
-                    margin-top: 30px;
-                    @include md{
-                        margin-top: 35px;
-                        text-align: center;
+//                 figcaption{
+//                     margin-left: 160px;
+//                     margin-top: 30px;
+//                     @include md{
+//                         margin-top: 35px;
+//                         text-align: center;
                        
-                        margin-left: -30px;
-                        }
-                    @include lg{
-                        margin-top: 20px;
-                        text-align: center;
-                        margin-left: -70px;
-                        }
-                    @include xl{
-                    margin-top: 20px;
-                    text-align: center;
-                    padding-left:-300px;
-                    margin-left: 0px;
-                    }
-                }
+//                         margin-left: -30px;
+//                         }
+//                     @include lg{
+//                         margin-top: 20px;
+//                         text-align: center;
+//                         margin-left: -70px;
+//                         }
+//                     @include xl{
+//                     margin-top: 20px;
+//                     text-align: center;
+//                     padding-left:-300px;
+//                     margin-left: 0px;
+//                     }
+//                 }
                 
             
             
-            }
+//             }
 
-            #icon3{
-                img{ 
-                    display: none;
+//             #icon3{
+//                 img{ 
+//                     display: none;
                     
-                    @include md{
-                        width: 198px;
-                        height: 149px;
+//                     @include md{
+//                         width: 198px;
+//                         height: 149px;
                        
-                        padding-right: 20px;
-                        display: grid;
+//                         padding-right: 20px;
+//                         display: grid;
                         
-                    }
-                    @include lg{
-                        width: 139px;
-                        height: 105px;
+//                     }
+//                     @include lg{
+//                         width: 139px;
+//                         height: 105px;
                        
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        display: grid;
-                    }
-                    @include xl{
-                        width: 198px;
-                        height: 149px;
+//                         padding-left: 20px;
+//                         padding-right: 20px;
+//                         display: grid;
+//                     }
+//                     @include xl{
+//                         width: 198px;
+//                         height: 149px;
                        
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        display: grid;
-                    }
-                }
+//                         padding-left: 20px;
+//                         padding-right: 20px;
+//                         display: grid;
+//                     }
+//                 }
                 
-                figcaption{
-                    display: none;
-                    margin-top: 20px;
-                    text-align: center;
+//                 figcaption{
+//                     display: none;
+//                     margin-top: 20px;
+//                     text-align: center;
 
-                    @include md{
-                        display: grid;
-                    }
-                }
-                margin-right: 40px;
+//                     @include md{
+//                         display: grid;
+//                     }
+//                 }
+//                 margin-right: 40px;
 
-            }
+//             }
 
-            #icon4{
-                img{ 
-                    display: none;
+//             #icon4{
+//                 img{ 
+//                     display: none;
                     
-                    @include md{
-                        width: 191px;
-                        height: 191px;
+//                     @include md{
+//                         width: 191px;
+//                         height: 191px;
                        
-                        margin-left: -30px;
-                        display: grid;
+//                         margin-left: -30px;
+//                         display: grid;
                         
-                    }
-                    @include lg{
-                        width: 135px;
-                        height: 135px;
+//                     }
+//                     @include lg{
+//                         width: 135px;
+//                         height: 135px;
                        
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        margin-left: -40px;
-                        display: grid;
-                    }
-                    @include xl{
-                        width: 191px;
-                        height: 191px;
+//                         padding-left: 20px;
+//                         padding-right: 20px;
+//                         margin-left: -40px;
+//                         display: grid;
+//                     }
+//                     @include xl{
+//                         width: 191px;
+//                         height: 191px;
                        
-                        padding-left: 0px;
-                        padding-right: 20px;
-                        margin-left: -50px;
-                        display: grid;
-                    }
-                }
-                figcaption{
-                    margin-top: 0px;
-                    text-align: center;
-                    display: none;
-                    @include md{
-                        margin-right: 50px;
-                        display: grid;
-                    }
+//                         padding-left: 0px;
+//                         padding-right: 20px;
+//                         margin-left: -50px;
+//                         display: grid;
+//                     }
+//                 }
+//                 figcaption{
+//                     margin-top: 0px;
+//                     text-align: center;
+//                     display: none;
+//                     @include md{
+//                         margin-right: 50px;
+//                         display: grid;
+//                     }
 
-                    @include lg{
-                        margin-right: 40px;
-                    }
+//                     @include lg{
+//                         margin-right: 40px;
+//                     }
 
-                    @include xl{
-                        margin-right: 58px;
-                    }
-                }
-                margin-top: -20px;
-            }
+//                     @include xl{
+//                         margin-right: 58px;
+//                     }
+//                 }
+//                 margin-top: -20px;
+//             }
 
-            #icon5{
-                img{ 
-                    display: none;
+//             #icon5{
+//                 img{ 
+//                     display: none;
                     
-                    @include md{
-                        width: 191px;
-                        height: 107px;
+//                     @include md{
+//                         width: 191px;
+//                         height: 107px;
                      
-                        padding-left: 40px;
-                        display: grid;
+//                         padding-left: 40px;
+//                         display: grid;
                         
-                    }
-                    @include lg{
-                        width: 135px;
-                        height: 75px;
+//                     }
+//                     @include lg{
+//                         width: 135px;
+//                         height: 75px;
                        
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        display: grid;
-                    }
-                    @include xl{
-                        width: 191px;
-                        height: 107px;
+//                         padding-left: 20px;
+//                         padding-right: 20px;
+//                         display: grid;
+//                     }
+//                     @include xl{
+//                         width: 191px;
+//                         height: 107px;
                        
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        display: grid;
-                    }
-                }
-                figcaption{
-                    display: none;
-                    margin-top: 0px;
-                    text-align: center;
-                    @include md{
-                        display: grid;
-                    }
-                    @include xl{
+//                         padding-left: 20px;
+//                         padding-right: 20px;
+//                         display: grid;
+//                     }
+//                 }
+//                 figcaption{
+//                     display: none;
+//                     margin-top: 0px;
+//                     text-align: center;
+//                     @include md{
+//                         display: grid;
+//                     }
+//                     @include xl{
                         
-                    }
-                }
-                padding-top: 50px ;
-            }
+//                     }
+//                 }
+//                 padding-top: 50px ;
+//             }
 
-            #icon6{
+//             #icon6{
                
-                figcaption{
-                    display: none;
-                    margin-top: 20px;
-                    text-align: center;
-                    margin-right: 0px;
+//                 figcaption{
+//                     display: none;
+//                     margin-top: 20px;
+//                     text-align: center;
+//                     margin-right: 0px;
 
-                    @include md{
-                        display: grid;
-                    }
-                }
-                img{
-                    display: none;
-                    @include md{
-                        margin-left: 50px;
-                        width: 146px;
-                        height: 146px;
-                        display: grid;
-                    }
+//                     @include md{
+//                         display: grid;
+//                     }
+//                 }
+//                 img{
+//                     display: none;
+//                     @include md{
+//                         margin-left: 50px;
+//                         width: 146px;
+//                         height: 146px;
+//                         display: grid;
+//                     }
 
-                    @include lg{
-                        margin-left: 0px;
-                        width: 103px;
-                        height: 103px;
-                        padding-left: 30px;
-                        padding-right: 30px;
-                        display: grid;
-                    }
+//                     @include lg{
+//                         margin-left: 0px;
+//                         width: 103px;
+//                         height: 103px;
+//                         padding-left: 30px;
+//                         padding-right: 30px;
+//                         display: grid;
+//                     }
 
-                    @include xl{
-                        margin-left: 10px;
-                        width: 146px;
-                        height: 146px;
-                        display: grid;
-                    }
+//                     @include xl{
+//                         margin-left: 10px;
+//                         width: 146px;
+//                         height: 146px;
+//                         display: grid;
+//                     }
                     
-                }
+//                 }
                 
-            }
-        }
+//             }
+//         }
 
-        #icon7{
+//         #icon7{
             
-            grid-area: infoo;
+//             grid-area: infoo;
            
-            background-color: #E5CEC8;
+//             background-color: #E5CEC8;
 
-            margin-top: 50px;
-            margin-left: -46px;
-            margin-right: -46px;
-            margin-bottom: -50px;
+//             margin-top: 50px;
+//             
+//             margin-bottom: -50px;
 
-            @include md{
-                margin-top: 0px;
-                margin-left: -50px;
-                margin-right: -46px;
-                margin-bottom: -50px;
-            }
-            @include lg{
-                margin-top: 0px;
-                margin-left: 50px;
-                margin-right: 0px;
-                margin-bottom: 0px;
-                }
-            @include xl{
-                    margin-top: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    margin-bottom: 0px;
-                    }
+//             @include md{
+//                 margin-top: 0px;
+//                 margin-left: -50px;
+//                 margin-right: -46px;
+//                 margin-bottom: -50px;
+//             }
+//             @include lg{
+//                 margin-top: 0px;
+//                 margin-left: 50px;
+//                 margin-right: 0px;
+//                 margin-bottom: 0px;
+//                 }
+//             @include xl{
+//                     margin-top: 0px;
+//                     margin-left: 0px;
+//                     margin-right: 0px;
+//                     margin-bottom: 0px;
+//                     }
             
 
-            p{
+//             p{
                 
-                text-align: justify;
-                padding-top: 50px;
-                    padding-bottom: -20px;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    font-size: 16px;
-                @include md{
+//                 text-align: justify;
+//                 padding-top: 50px;
+//                     padding-bottom: -20px;
+//                     padding-left: 30px;
+//                     padding-right: 30px;
+//                     font-size: 16px;
+//                 @include md{
                     
-                    text-align: justify;
-                    padding-top: 50px;
-                    padding-bottom: -20px;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    font-size: 16px;
+//                     text-align: justify;
+//                     padding-top: 50px;
+//                     padding-bottom: -20px;
+//                     padding-left: 30px;
+//                     padding-right: 30px;
+//                     font-size: 16px;
         
-                }
+//                 }
                 
-                @include lg{
+//                 @include lg{
 
-                    text-align: justify;
-                    padding-top: 0px;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                    font-size: 16px;
+//                     text-align: justify;
+//                     padding-top: 0px;
+//                     padding-left: 0px;
+//                     padding-right: 0px;
+//                     font-size: 16px;
         
-                }
+//                 }
 
-                @include xl{
+//                 @include xl{
 
-                    text-align: justify;
-                    padding-top: 20px;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    font-size: 21px;
+//                     text-align: justify;
+//                     padding-top: 20px;
+//                     padding-left: 30px;
+//                     padding-right: 30px;
+//                     font-size: 21px;
         
-                }
+//                 }
 
 
-            }
-            @include md{
+//             }
+//             @include md{
 
-                margin-bottom: 70px;
-                padding-top: 10px;
-                padding-left: 30px;
-                padding-right: 30px;
+//                 margin-bottom: 70px;
+//                 padding-top: 10px;
+//                 padding-left: 30px;
+//                 padding-right: 30px;
     
-            }
+//             }
 
-            @include lg{
+//             @include lg{
 
-                margin-bottom: 70px;
-                padding-top: 30px;
-                padding-left: 30px;
-                padding-right: 30px;
+//                 margin-bottom: 70px;
+//                 padding-top: 30px;
+//                 padding-left: 30px;
+//                 padding-right: 30px;
     
-            }
-            @include xl{
+//             }
+//             @include xl{
 
-                margin-bottom: 90px;
-                padding-top: 20px;
-                padding-left: 30px;
-                padding-right: 30px;
+//                 margin-bottom: 90px;
+//                 padding-top: 20px;
+//                 padding-left: 30px;
+//                 padding-right: 30px;
     
-            }
+//             }
 
-            article{
-                text-align: center;
-                padding-bottom: 20px;
-                @include md{
-                    text-align: right;
-                    padding-bottom: 0px;
+//             article{
+//                 text-align: center;
+//                 padding-bottom: 20px;
+//                 @include md{
+//                     text-align: right;
+//                     padding-bottom: 0px;
                     
-                }
-                button{
+//                 }
+//                 button{
                
                 
-                margin-top: 20px;
+//                 margin-top: 20px;
                 
                 
-                padding-top: 6px;
-                padding-bottom: 6px;
-                padding-right: 40px;
-                padding-left: 40px;
-                border-radius: 2px;
-                margin-bottom: 40px;
+//                 padding-top: 6px;
+//                 padding-bottom: 6px;
+//                 padding-right: 40px;
+//                 padding-left: 40px;
+//                 border-radius: 2px;
+//                 margin-bottom: 40px;
                 
-                background-color: $iris;
-                border: none;
-                color: $vanilla;
+//                 background-color: $iris;
+//                 border: none;
+//                 color: $vanilla;
     
-                &:hover,
-                &:active {
-                    color: #C38583;
+//                 &:hover,
+//                 &:active {
+//                     color: #C38583;
                 
-               }
+//                }
     
-            }}
+//             }}
            
 
-        }
-    }
-}
+//         }
+//     }
+// }
