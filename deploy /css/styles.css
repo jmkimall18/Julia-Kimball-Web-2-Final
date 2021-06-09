@@ -443,8 +443,8 @@ a {
 #nav-container ul li a:visited {
   align-items: center;
   padding: 0 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: -20px;
   margin-bottom: -30px;
   transition: 0.25s;
@@ -465,7 +465,7 @@ header {
   z-index: 100;
   position: fixed;
   left: 0;
-  background-color: #F7E8DC;
+  background-color: #FCF5F1;
   width: 100%;
   margin-top: -184px;
   padding-top: 30px;
@@ -504,7 +504,7 @@ header > div {
   header > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "burger logos search" ". nav .";
+    grid-template-areas: ". logos search" ". nav .";
   }
 }
 header > div #burger-container {
@@ -533,6 +533,11 @@ header > div #burger-container #burger-icon:hover, header > div #burger-containe
 header > div #img6 {
   grid-area: logos;
 }
+@media (min-width: 768px) {
+  header > div #img6 {
+    margin-left: 220px;
+  }
+}
 header > div #nav-container {
   grid-area: nav;
   display: none;
@@ -541,7 +546,7 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   header > div #nav-container {
-    background-color: #F7E8DC;
+    background-color: #FCF5F1;
     display: block !important;
   }
   header > div #nav-container a {
@@ -553,10 +558,11 @@ header > div #nav-container {
   }
 }
 header > div #search {
-  display: flex-end;
   grid-area: search;
-  padding-left: 40px;
-  padding-top: 35px;
+  display: flex-end;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 header > div #search button {
   background-color: transparent;
@@ -914,7 +920,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Features > div ul #icon1 img {
   margin-top: 30px;
-  margin-left: 90px;
+  margin-left: 150px;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon1 img {
@@ -947,7 +953,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #Features > div ul #icon1 figcaption {
-  margin-left: 90px;
+  margin-left: 150px;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
@@ -975,7 +981,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Features > div ul #icon2 img {
   margin-top: 0px;
-  margin-left: 50px;
+  margin-left: 110px;
 }
 @media (min-width: 768px) {
   #Features > div ul #icon2 img {
@@ -1008,7 +1014,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   }
 }
 #Features > div ul #icon2 figcaption {
-  margin-left: 100px;
+  margin-left: 160px;
   margin-top: 30px;
 }
 @media (min-width: 768px) {

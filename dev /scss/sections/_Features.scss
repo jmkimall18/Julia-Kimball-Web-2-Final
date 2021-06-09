@@ -103,7 +103,7 @@
                 
                 img{ 
                     margin-top: 30px;
-                    margin-left: 90px;
+                    margin-left: 150px;
                     @include md{
                         margin-left: 0px;
                         width: 114px;
@@ -131,7 +131,7 @@
                     }
                
                 figcaption{
-                    margin-left: 90px;
+                    margin-left: 150px;
                     margin-top: 30px;
                     @include md{
                         margin-top: 20px;
@@ -159,7 +159,7 @@
             #icon2{  
                 img{ 
                     margin-top: 0px;
-                    margin-left: 50px;
+                    margin-left: 110px;
                    
                     
                 @include md{
@@ -189,7 +189,7 @@
             }
                
                 figcaption{
-                    margin-left: 100px;
+                    margin-left: 160px;
                     margin-top: 30px;
                     @include md{
                         margin-top: 35px;
