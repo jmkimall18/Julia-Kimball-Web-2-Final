@@ -23,7 +23,7 @@
     grid-template-areas: ". Wedding-2 .";
 
     @include lg{
-        display: grid;
+    display: grid;
     grid-template-columns: 90px auto 90px;
     grid-template-areas: ". Wedding-2 .";
 
@@ -214,7 +214,7 @@
             padding-bottom: 0px;
             padding-top: 16px;
             
-
+            transition: 0.25s;
             border-radius: 2px;
             padding: 3px 6px;
             padding-left: 40px;

@@ -140,7 +140,7 @@ header {
                 color: $iris;
                 cursor: pointer;
                 font-size: rem-calc(30);
-                
+                transition: 0.25s;
 
                 &:hover,
                 &:active {
