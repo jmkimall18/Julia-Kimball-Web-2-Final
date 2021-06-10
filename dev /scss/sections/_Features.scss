@@ -43,12 +43,14 @@
         
               h1 {
                   padding-bottom: 30px;
+                  padding-top: 30px;
                      // style your text
                     font-size: 30px;
                   text-align: center;
                    @include md {
                         grid-area: title;
                         text-align: left;
+                        padding-left: 40px;
                         
                    }
                     @include lg {
@@ -63,7 +65,7 @@
             
             }
 
-            ul{
+    ul{
             grid-area: logos;
             margin-bottom: 40px;
             margin-top: 10px;
@@ -83,6 +85,8 @@
              @include lg {
                 
                  padding-left: 0px;
+
+                
                 
              }
              @include xl {
@@ -97,10 +101,109 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 10px;
 
             }
 
+            img{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }
 
+                @include md{
+
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    gap: 20px;
+                }
+
+                @include lg{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    gap: 20px;
+
+                }
+
+                #icon1{ 
+                    display: none;
+
+                    @include md{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                    }
+                }
+
+                #icon2{
+                    display: none;
+
+                    @include md{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                    }
+
+                    @include lg{
+                        display: grid;
+                       
+                                          padding-top: 25px ;
+                                           padding-left: 20px;
+                                             padding-right: 20px;
+                                            margin-left: 0px;
+                                            ;
+                                        }
+                                        @include xl{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center; 
+                                           
+                                           }
+                }
+
+                #icon3{
+                    display: none;
+
+                    @include md{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                    }
+
+                  
+
+                }
+
+                #icon4{
+                    display: none;
+
+                    @include md{
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                    }
+                }
+
+                #icon5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    
+
+                }
+
+                #icon6{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    margin-bottom: 30px;
+
+                    @include md{
+                        margin-bottom: 0px;
+                    }
+                }
 
 
 
@@ -109,14 +212,64 @@
             }
 
             #icon7{
-
-                grid-area: infoo;
-           
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                padding-right: 50px;
+                padding-left: 50px;
+                font-size: 16px;
+    grid-area: infoo;
+    text-align: justify;
     background-color: #E5CEC8;
+
+    @include md{
+        margin-bottom: 60px;
+    }
+
+    @include xl{
+        font-size: 21px;
+    }
+
+
             }
 
-}
+            article{
+               text-align: center;
+                padding-bottom: 0px;
+                   @include md{
+                         text-align: right;
+                     padding-bottom: 0px;
+                                    
+                        }
+                             button{
+                               
+                                
+                            margin-top: 30px;
+                                
+                                
+                                 padding-top: 6px;
+                                    padding-bottom: 6px;
+                                padding-right: 40px;
+                                padding-left: 40px;
+                                 border-radius: 2px;
+                                 margin-bottom: 0px;
+                                
+                                background-color: $iris;
+                                border: none;
+                                 color: $vanilla;
+                    
+                                &:hover,
+                                &:active {
+                                 color: #C38583;
+                                
+                                }
+                    
+                         }
+                        }
+
                     }
+            }
 
 // #Features{
     

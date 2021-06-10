@@ -866,6 +866,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
 }
 #Features > div h1 {
   padding-bottom: 30px;
+  padding-top: 30px;
   font-size: 30px;
   text-align: center;
 }
@@ -873,6 +874,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   #Features > div h1 {
     grid-area: title;
     text-align: left;
+    padding-left: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -916,10 +918,146 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+}
+#Features > div ul img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #Features > div ul {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 20px;
+  }
+}
+#Features > div ul #icon1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#Features > div ul #icon2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  #Features > div ul #icon2 {
+    display: grid;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div ul #icon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#Features > div ul #icon3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#Features > div ul #icon4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#Features > div ul #icon5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Features > div ul #icon6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  #Features > div ul #icon6 {
+    margin-bottom: 0px;
+  }
 }
 #Features > div #icon7 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 16px;
   grid-area: infoo;
+  text-align: justify;
   background-color: #E5CEC8;
+}
+@media (min-width: 768px) {
+  #Features > div #icon7 {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #Features > div #icon7 {
+    font-size: 21px;
+  }
+}
+#Features > div article {
+  text-align: center;
+  padding-bottom: 0px;
+}
+@media (min-width: 768px) {
+  #Features > div article {
+    text-align: right;
+    padding-bottom: 0px;
+  }
+}
+#Features > div article button {
+  margin-top: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 2px;
+  margin-bottom: 0px;
+  background-color: #81747F;
+  border: none;
+  color: #F7E8DC;
+}
+#Features > div article button:hover, #Features > div article button:active {
+  color: #C38583;
 }
 
 /* =============
@@ -1042,12 +1180,12 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
   text-align: justify;
   background-color: #F2E2D8;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 20px;
 }
 #heading2 aside button {
   margin-top: 50px;
@@ -1074,7 +1212,6 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   margin-top: 50px;
   padding-bottom: 0px;
   padding-top: 16px;
-  transform: rotateX(90);
   border-radius: 2px;
   padding: 3px 6px;
   padding-top: 6px;
@@ -1106,7 +1243,7 @@ footer > div #f2 ul i:hover, footer > div #f2 ul i:active {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 /* =============

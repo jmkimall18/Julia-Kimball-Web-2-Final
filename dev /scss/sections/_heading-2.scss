@@ -12,12 +12,12 @@
             margin-top: 50px;
             padding-top: 30px;
             padding-bottom: 30px;
-            padding-right: 50px;
-            padding-left: 50px;
+            padding-right: 70px;
+            padding-left: 70px;
         text-align: justify;
       background-color: $starry;
       font-size: 18px;
-      line-height: 30px;
+      line-height: 20px;
 
         }
 
@@ -62,8 +62,7 @@
          margin-top: 50px;
          padding-bottom: 0px;
          padding-top: 16px;
-        transform: rotateX(90);
-
+            
          @include md{
              margin-top: 10px;
          }
@@ -104,7 +103,7 @@
             padding-left: 30px;
             padding-right: 30px;
             font-size: 16px;
-      line-height: 25px;
+      line-height: 20px;
 
         }
 
